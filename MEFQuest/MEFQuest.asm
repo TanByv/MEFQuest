@@ -37,9 +37,8 @@ clearloop:
 .end_macro
 
 # Selection Macro
-.macro selection($question, $options, $destination1, $destination2)
-    print($question)
-    print($options)
+.macro selection($prompt, $destination1, $destination2)
+    print($prompt)
 
     # read integer from user
     li $v0, 5
@@ -104,8 +103,7 @@ clearloop:
     debugprompt: .asciiz " ______   _______  _______  __   __  _______    __   __  _______  __    _  __   __ \n|      | |       ||  _    ||  | |  ||       |  |  |_|  ||       ||  |  | ||  | |  |\n|  _    ||    ___|| |_|   ||  | |  ||    ___|  |       ||    ___||   |_| ||  | |  |\n| | |   ||   |___ |       ||  |_|  ||   | __   |       ||   |___ |       ||  |_|  |\n| |_|   ||    ___||  _   | |       ||   ||  |  |       ||    ___||  _    ||       |\n|       ||   |___ | |_|   ||       ||   |_| |  | ||_|| ||   |___ | | |   ||       |\n|______| |_______||_______||_______||_______|  |_|   |_||_______||_|  |__||_______|\n\n"
     debugoptions: .asciiz "[1] Test fight\n[2] Nothingness\n"
 
-    startmenu_question: .asciiz "Do you want to start the game?\n"
-    startmenu_options: .asciiz "[1] Start the game\n[2] Use checkpoint code\n"
+    startmenu_prompt: .asciiz "Do you want to start the game?\n[1] Start the game\n[2] Use checkpoint code\n"
 
     testfight_guards: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n                \n                \n                                            #                                               #\n                              {}            | `_' `-' `_' `-' `_' `' `-' `_' `-' `_' `' `-' |            {}\n                             .--.           |                                               |           .--.\n                            /.--.\\          |                                               |          /.--.\\                                                              \n                            |====|          |                                               |          |====|\n                            |`::`|          |                                               |          |`::`|\n                        .-;`\\..../`;_.-^-._ |                                               |      .-;`\\..../`;_.-^-._\n                 /\\\\   /  |...::..|`   :   `|                                               /\\\\   /  |...::..|`   :   `|\n                 |:'\\ |   /'''::''|   .:.   |                                               |:'\\ |   /'''::''|   .:.   | \n                @|\\ /\\;-,/\\   ::  |..:::::..|                                               |\\ /\\;-,/\\   ::  |..:::::..|\n                `||\\ <` >  >._::_.| ':::::' |                                               ||\\ <` >  >._::_.| ':::::' |\n                 || `''`  /   ^^  |   ':'   |                                               || `''`  /   ^^  |   ':'   |\n                 ||       |       \\    :    |                                               ||       |       \\    :    /   \n                 ||       |        \\   :   /|                                               ||       |        \\   :   /\n                 ||       |___/\\___|`-.:.-` |                                               ||       |___/\\___|`-.:.-`\n                 ||        \\_ || _/    `    |                                               ||        \\_ || _/    `\n                 ||        <_ >< _>         |                                               ||        <_ >< _>     \n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||       _\\.:||:./_        |                                               ||       _\\.:||:./_\n                 \\/      /____/\\____\\       T                                               \\/      /____/\\____\\\n                \n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
     testfight_dialog: .asciiz "hello world 123\n"
@@ -115,7 +113,7 @@ main:
     clearterminal
     sleep(500)
     print(prompt1)
-    selection(startmenu_question, startmenu_options, startgame, checkpoint)
+    selection(startmenu_prompt, startgame, checkpoint)
 
 debugmenu:
     clearterminal
