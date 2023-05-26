@@ -90,9 +90,9 @@ clearloop:
     newline: .asciiz "\n"
     buffer: .space 4
     invalid_option: .asciiz "Please enter a valid option"
-    breakpoint_prompt: .asciiz "Press Enter to Continue"
+    breakpoint_prompt: .asciiz "Press enter to continue"
     fight_starting: .asciiz "Fight is starting in 5 seconds, get ready!"
-    answer_prompt: .asciiz "> Enter Answer: "
+    answer_prompt: .asciiz "> Enter answer: "
 
     stats_spacing: .asciiz "                    "
     stats_player_HP: .asciiz " [HP]: " 
