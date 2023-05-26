@@ -37,7 +37,6 @@ clearloop:
 .end_macro
 
 # Selection Macro
-# Selection Macro
 .macro selection($prompt, $destination1, $destination2)
     print($prompt)
 
@@ -102,7 +101,7 @@ clearloop:
     stats_finalenemy_HP: .asciiz "???/???"
 
     debugprompt: .asciiz " ______   _______  _______  __   __  _______    __   __  _______  __    _  __   __ \n|      | |       ||  _    ||  | |  ||       |  |  |_|  ||       ||  |  | ||  | |  |\n|  _    ||    ___|| |_|   ||  | |  ||    ___|  |       ||    ___||   |_| ||  | |  |\n| | |   ||   |___ |       ||  |_|  ||   | __   |       ||   |___ |       ||  |_|  |\n| |_|   ||    ___||  _   | |       ||   ||  |  |       ||    ___||  _    ||       |\n|       ||   |___ | |_|   ||       ||   |_| |  | ||_|| ||   |___ | | |   ||       |\n|______| |_______||_______||_______||_______|  |_|   |_||_______||_|  |__||_______|\n\n"
-    debugoptions: .asciiz "[1] Test fight\n[2] Nothingness\n[3] Floor3Elevator"
+    debugoptions: .asciiz "[1] Test fight\n[2] Nothingness\n[3] Floor3_Elevator\n"
 
     startmenu_prompt: .asciiz "Do you want to start the game?\n[1] Start the game\n[2] Use checkpoint code\n"
 
@@ -115,6 +114,7 @@ clearloop:
     elevator_q3: .asciiz "Prefetching algorithms decrease the importance of memory access patterns since now we have pages we need in the main memory.\n[1]True\n[2]False\n"
     elevator_q4: .asciiz "With superscalar organization increased performance can be achieved by increasing the number of parallel pipelines.\n[1]True\n[2]False\n"
     elevator_q5: .asciiz "The caches hold recently accessed data.\n[1]True\n[2]False\n"
+
 .text
 main:
     clearterminal
@@ -179,7 +179,6 @@ testfight:
     j end
     
 elevatorgame:
-    
     q1:
     clearterminal
     print(floor3_elevator)
