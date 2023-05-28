@@ -77,6 +77,16 @@ clearloop:
     syscall
 .end_macro
 
+# RNG Macro
+.macro randomness($upper, $lower)
+    li $v0, 40 # syscall for random int
+    li $a1, $upper # upper bound
+    syscall
+    addi $a0, $a0, $lower # add lower bound to result
+    move $t5, $a1 # move random int to $a0
+    syscall
+.end_macro
+
 # Notes from Tan:
 # t0 and t1 is used by macros and other functions, temporary data
 # t2 is player HP, t3 is enemy HP, t4 is damage thats going to be dealt (multiplier calculated inside fight)
@@ -107,6 +117,11 @@ clearloop:
 
     testfight_guards: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n                \n                \n                                            #                                               #\n                              {}            | `_' `-' `_' `-' `_' `' `-' `_' `-' `_' `' `-' |            {}\n                             .--.           |                                               |           .--.\n                            /.--.\\          |                                               |          /.--.\\                                                              \n                            |====|          |                                               |          |====|\n                            |`::`|          |                                               |          |`::`|\n                        .-;`\\..../`;_.-^-._ |                                               |      .-;`\\..../`;_.-^-._\n                 /\\\\   /  |...::..|`   :   `|                                               /\\\\   /  |...::..|`   :   `|\n                 |:'\\ |   /'''::''|   .:.   |                                               |:'\\ |   /'''::''|   .:.   | \n                @|\\ /\\;-,/\\   ::  |..:::::..|                                               |\\ /\\;-,/\\   ::  |..:::::..|\n                `||\\ <` >  >._::_.| ':::::' |                                               ||\\ <` >  >._::_.| ':::::' |\n                 || `''`  /   ^^  |   ':'   |                                               || `''`  /   ^^  |   ':'   |\n                 ||       |       \\    :    |                                               ||       |       \\    :    /   \n                 ||       |        \\   :   /|                                               ||       |        \\   :   /\n                 ||       |___/\\___|`-.:.-` |                                               ||       |___/\\___|`-.:.-`\n                 ||        \\_ || _/    `    |                                               ||        \\_ || _/    `\n                 ||        <_ >< _>         |                                               ||        <_ >< _>     \n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||       _\\.:||:./_        |                                               ||       _\\.:||:./_\n                 \\/      /____/\\____\\       T                                               \\/      /____/\\____\\\n                \n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
     testfight_dialog: .asciiz "hello world 123\n"
+    testfight_instruction: .asciiz "Write this number as quickly as possible and press enter: "
+    testfight_takehit: .asciiz "Guards: ARGHH-!\n\n> You dealt "
+    testfight_takehit2: .asciiz " amount of damage.\n\n"
+    testfight_hitplayer_dialog: .asciiz "Guards: Take this!\n\n> You took "
+    testfight_youwin: .asciiz "Congrats you won"
     
     floor3_elevator: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \n---------------------------------------------\n|               |------------|              |\n|               |            |              |\n|               |------------|              |              ?????\n|---------------------||--------------------|             ??   ?\n|          |          ||         |          |             ?   ??\n|          |          ||         |          |               ???\n|          |          ||         |          |              ??\n|          |          ||         |          |\n|          |          ||         |          |         @@@  ?\n|          |          ||         |          |        @o@o@\n|          |          ||         |          |        @@@@@xxxxx\n|          |          ||         |   |--|   |         @@@    xxxxx\n|          |          ||         |   |..|   |       xxxxxxxxx xxxx\n|          |          ||         |   |..|   |    xxxxxxxxxxxxxxxx\n|          |          ||         |   |..|   |    xxxxxxxxxxxx\n|          |          ||         |   |--|   |   xxxxxxxxxxxxx\n|          |          ||         |          |  xxx  xxxxxxxxx\n|          |          ||         |          |       xxxxxxxxx\n|          |          ||         |          |       xxx   xxx\n|          |          ||         |          |       xxx   xxx\n|          |          ||         |          |       xxx   xxx\n|          |          ||         |          |       xxx   xxx\n|          |          ||         |          |     xxxxx   xxxxx\n---------------------------------------------\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
     elevator_q1: .asciiz "The organizational changes in processor design have primarily been focused on increasing instruction-level parallelism so that more work could be done in each clock cycle.\n[1]True\n[2]False\n"
@@ -152,6 +167,7 @@ testfight:
 
     li $t2, 100
     li $t3, 100
+    li $t4, 0
     printstats()
 
     print(testfight_dialog)
@@ -161,22 +177,78 @@ testfight:
 
     clearterminal
     print(testfight_guards)
+    print(fight_starting)
+    sleep(5000)
 
     # Get current time before user input
     li $v0, 30
     syscall
     move $t9, $a0 # Store starting time in $t9
-    printregister($t9)
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
 
-    sleep(5000)
+    testfight_loop:
+        clearterminal
+        print(testfight_guards)
+        printstats
 
-    li $v0, 30
-    syscall
-    move $t8, $a0 # Store time in $t8
-    print(newline)
-    printregister($t8)
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, testfight_turn_ends # if $t8 > $t9 exit the loop
 
-    j end
+        randomness(99999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, testfight_correct # branch to label 'equal' if $v0 == $t5
+        j testfight_loop
+
+        testfight_correct:
+            addi $t4, $t4, 1
+            j testfight_loop
+
+    testfight_turn_ends:
+        li $t0, 13 # load immediate value 13 into $t0 (damage multiplier, 8 hits = KO for this fight)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg
+        bltz $t3, testfight_enemydead # check if enemy is dead
+
+        clearterminal        
+        print(testfight_guards)
+        printstats
+        
+        print(testfight_takehit)
+        printregister($t4)
+        print(testfight_takehit2)
+        sleep(3000)
+
+        randomness(30, 0)
+        sub $t2, $t2, $t4 # deal dmg to player
+
+        clearterminal
+        print(testfight_guards)
+        printstats
+        
+        print(testfight_hitplayer_dialog)
+        printregister($t4)
+        print(testfight_takehit2)
+        fakebreakpoint
+        j testfight_loop
+
+    testfight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(testfight_guards)
+        printstats
+        print(testfight_youwin)
+        sleep(5000)
+        j debugmenu
     
 elevatorgame:
     q1:
