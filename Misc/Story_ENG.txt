@@ -21,6 +21,10 @@ Ms. Yılmaz managed to stay unaffected by the videos because she noticed the tru
 
 Noticing that Ms. Yılmaz manage to resist the brainwashing videos, he set out to capture her and succeeded.
 
+By the time you arrive at to the campus almost all studens and personel has been converted into mindless zombies.
+
+Accepting the sitation you're in, you approach the gates of the campus.
+
 
 
 
@@ -31,10 +35,16 @@ Okula giriyoruz. Fotoğraf: Turnikeler ve Güvenlik masası.
 
 Güvenlikçiler ile savaş
 
-- Where is your ID MC?
-+ Oh, I forgot it at home, may I pa-
--Nah, you can't pass without your ID, I should destabilize you. No offense.
-+Wait wha-
+Player: Hey, good day 
+
+Guardsman:  Where is your MEF ID?
+
+Player: Oh, I guess I forgot it at home, may I pa-
+
+Guardsman: No way I'm letting you pass without your ID, you shall not pass.
+
+Player: Looks like I'll have to pass my way!
+
 (During the fight the Security Guard will say: You shall not pass!)
 
 Kantinci
