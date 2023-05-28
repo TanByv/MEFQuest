@@ -28,12 +28,12 @@
 # Clear Macro
 .macro clearterminal
     li $t0, 60
-clearloop:
-    li $v0, 4
-    la $a0, newline
-    syscall
-    addi $t0, $t0, -1
-    bnez $t0, clearloop
+    clearloop:
+        li $v0, 4
+        la $a0, newline
+        syscall
+        addi $t0, $t0, -1
+        bnez $t0, clearloop
 .end_macro
 
 # Selection Macro
@@ -84,6 +84,23 @@ clearloop:
     syscall
     addi $a0, $a0, $lower # add lower bound to result
     move $t5, $a0 # move random int to $a0
+.end_macro
+
+# Dialog Randomizer Macro
+.macro printrandom($text1, $text2, $text3)
+    randomness(2, 0)
+    beq $t5, 0, print_text1
+    beq $t5, 1, print_text2
+    j print_text3
+
+    print_text1:
+        print($text1)
+
+    print_text2:
+        print($text2)
+
+    print_text3:
+        print($text3)
 .end_macro
 
 # Notes from Tan:
