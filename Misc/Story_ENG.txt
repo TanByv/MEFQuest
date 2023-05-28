@@ -185,7 +185,132 @@ MC: (God, that was close...)
 > Another encounter with the toaster guy.
 +How is going? Have you found a way?
 MC: Aye, I got some intel, I should find a kind of ancient information at Library to defeat him. 
++Nice, in any case if you need this *offers a pizza toast*
+MC: Thanks man.
 
+
+>Eventually MC gets to library.
+The librarian is waiting in fron of the door, guarding there.
+MC: May I pass through, I need a book for reasearch purposes.
++No one is allowed unless you get permission by Professor Korkut. Do you any signed paper?
+MC:Nah.
++Then you can't pass through.
+MC: We will see about that.
+
+fight
+
++Ugh... I feel dizzy, what happened to me?
+MC: Professor Korkut is manipulating everyone in the school. 
+MC: I need some help now. I should gather some information to stop him. Will you help me.
++You talk about the forbiedden part of the library I guess. It has 3 different corridors. THe information you need should be there.
+
+(Koridor ASCII)ascii art hazır, sağ sol düz
+
+kitap fotoları
+
+1st Book; The Secret of Ortaylı
+.-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. / -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . / - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . / ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. / -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. / .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . / .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... / .. -. -.. ..- ... - .-. .. .- .-.. .. --.. . -.. --..-- / - .... . / -. ..- -- -... . .-. / --- ..-. / .-- --- .-. -.- .. -. --. / .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... / .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- / ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- / - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - / -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. / .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. / ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- / ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--
+MC: Ehh...
+
+2nd Book; Computer Architecture
+
+The organizational changes in processor design have primarily been focused on increasing instruction-level parallelism so that more work could be done in each clock cycle. - True
+
+GPUs are capable of running operating systems. - False
+
+With superscalar organization increased performance can be achieved by increasing the number of parallel pipelines - True
+
+The caches hold recently accessed data - True
+
+MC: I don't really need that book now.
+
+
+3rd book; Egitim Sizde Sistem Caresiz by Ercan Korkut
+
+MC: That was my favorite book back in my first class days.
+MC: He was such a good man, I wonder why the things turned out like this.
+
+*MC finds a marked page, only thing written on that page is 'Use power of the Math'
+
+MC: Oh, I should have attended calculus classes...
+
+MC: Anyways, let's keep going.
+
+-----------------------------
+
+>MC gets back to the stairs, realizes that 4th floor's on upstairs is destroyed. 
+
+MC: (A great plan, he doesn't let me go up. Stairs cannot be used and the elevator was not working when I checked it last. I will see if I can do anything.)
+
+>Go back on 3rd Floor
+>Check the destroyed stairs.
+
+{>Go back on 3rd Floor
+>Check the destroyed stairs..
+
+>Go back on 3rd Floor
+>Check the destroyed stairs...
+
+
+-->Easteregg}
+
+>MC gets closer to elevator and stare at it for a while, he/she gets a few necessary items from electric lab and tries to repair it.
+
+->Minigame
+
+>MC manages to repair the elevator somehow and goes up on 5th floor. 
+>Ercan Korkut greets him as his arms were crossed, let's him get out of the elevator.
+
+E: Ah... Finally I have found you. It was such a surprise that a failure like you could reach 'till here. But it ends here I fear.
+E: You should have left this Campus and never come back. It's too late for regretting things tho. I'll make sure that you will be joined the others after I defeat you.
+
+*MC kept his cool at Ercan's intimidating demeanor.*
+
+MC: You are poisoned by the power grantedd you by the people who have trusted you!
+MC: You have turned all the students, all the professors into your puppets.
+MC: Today your reign of manipulation will end, I will end it.
+
+Ercan: You? Will you do that by all yourself? And how exactly? Don't be so silly now.
+Ercan: You are just another small error in my system. I will fix it.
+
+MC: You should have educated people not turning them into brainwashed zombies. I was a big fan of your works, your efforts on making people go beyond their true potentials.
+MC: And you underestimate your student professor. I have found it. I read your secret book in the library. I will use the power of MATH.
+
+Ercan: So you did it. You really entered the forbidden room. It won't change a thing anyways. Enough talking, let's en-
+
+*His words cutted off by MC*
+
+MC: Your time is runnig out!
+
+Fight starts
+
+Ercan: OMG What did i do... This program has taken over me.
+Ercan: Instead of brainwashing young people, I should have educated them.
+Ercan: How did you realize what was happening?
+MC: Buse teacher, told me everything before being captured.
+MC: Thanks to that, I wasn't affected by anything.
+MC: It's not too late to correct what you have done.
+MC: How can we fix the students?
+Ercan: We can fix the students with a program called ‘Yetkin-Gencler.’
+Muhammer: You will never be able to stop me. It's too late now...
+MC and Ercan: ???
+Muhammer: It's time to face me.
+The fight begins, and MC loses.
+MC: He's too powerful for me...
+Ercan: I know how to defeat him... Use mathematics.
+MC: Huh??? Are you serious?
+MC: Bruh. What does math have to do with anything?
+Fight
+Muhammer Kartal faints.
+MC takes the key from Muhammer.
+Buse: I knew you could do it. You deserve to get a full credit from the project.
+They rescue Buse from the room and board the shuttle to leave.
+Muhammet Sahin becomes the new rector of MEF University.
+Ercan changes his name to Erhan and establishes the 'Yetkin-Gencler' program.
+The campus issue at MEF remains unresolved.
+
+Secret Ending:
+MC decides abuse the power he got and to lead the Yetmez Gençler program himself. 
 
 
 
