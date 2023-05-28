@@ -213,7 +213,7 @@ testfight:
             j testfight_loop
 
     testfight_turn_ends:
-        li $t0, 15 # load immediate value 13 into $t0 (damage multiplier, 8 hits = KO for this fight)
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier, 7 hits = KO for this fight)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
@@ -230,7 +230,7 @@ testfight:
         printregister($t4)
         print(testfight_takehit2)
         li $t4, 0 # reset dmg
-        sleep(1000)
+        sleep(1500)
         
         print(newline)
         print(testfight_hitplayer_dialog)
