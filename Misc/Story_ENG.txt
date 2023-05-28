@@ -150,11 +150,12 @@ Player: I have to stop him at any cost!
 
 > 2nd floor (Prep floor)
 
-You see a few prep students
->They talk with such a broken accent and english
-+School good but school no has campus.
--Ama UNIQ var kanka.
-MC: Haven't you told, it's forbidden here talking in turkish?!
+Player: This should be the English Prep year- 
+
+Student: School good but school no has campus. 
+
+Player: Haven't you told, it's forbidden here talking in turkish?!
+
 (fight sırasında I don't now diyebilir öğrenciler)
 
 +What happening!?!?!
