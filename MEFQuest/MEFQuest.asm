@@ -208,14 +208,14 @@ testfight:
     addi $t9, $t9, 15000 # Give 15 seconds to the user
 
     testfight_loop:
-        clearterminal
-        print(testfight_guards)
-        printstats
-
         li $v0, 30
         syscall
         move $t8, $a0 # Store time in $t8
         bgt $t8, $t9, testfight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(testfight_guards)
+        printstats
 
         randomness(89999, 10000)
 
