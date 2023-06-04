@@ -352,7 +352,7 @@
 	floor3_library_book3_dialog1: .asciiz "Player: That was my favorite book back in my freshman days.\n\n"
 	floor3_library_book3_dialog2: .asciiz "Player: He was such a good man, I wonder why the things turned out like this.\n\n"
 
-	floor3_library_book3_story: .asciiz "*MC finds a marked page, only thing written on that page is 'Use the power of Math'\n\n"
+	floor3_library_book3_story: .asciiz "*Player finds a marked page, only thing written on that page is 'Use the power of Math'\n\n"
 
 	floor3_library_book3_dialog4: .asciiz "Player: Oh, I should have attended the calculus classes...\n\n"
 	floor3_library_book3_dialog5: .asciiz "Player: Anyways, let's keep going.\n\n\n"
@@ -379,6 +379,41 @@
     floor3_minigame_gameoverslow: .asciiz " @@@@@@@@   @@@@@@   @@@@@@@@@@   @@@@@@@@            @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   \n@@@@@@@@@  @@@@@@@@  @@@@@@@@@@@  @@@@@@@@           @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  \n!@@        @@!  @@@  @@! @@! @@!  @@!                @@!  @@@  @@!  @@@  @@!       @@!  @@@  \n!@!        !@!  @!@  !@! !@! !@!  !@!                !@!  @!@  !@!  @!@  !@!       !@!  @!@  \n!@! @!@!@  @!@!@!@!  @!! !!@ @!@  @!!!:!             @!@  !@!  @!@  !@!  @!!!:!    @!@!!@!   \n!!! !!@!!  !!!@!!!!  !@!   ! !@!  !!!!!:             !@!  !!!  !@!  !!!  !!!!!:    !!@!@!    \n:!!   !!:  !!:  !!!  !!:     !!:  !!:                !!:  !!!  :!:  !!:  !!:       !!: :!!   \n:!:   !::  :!:  !:!  :!:     :!:  :!:                :!:  !:!   ::!!:!   :!:       :!:  !:!  \n::: ::::  ::   :::  :::     ::    :: ::::           ::::: ::    ::::     :: ::::  ::   :::  \n:: :: :    :   : :   :      :    : :: ::             : :  :      :      : :: ::    :   : :  \n                                                                                             \n\n> You were too slow and got caught!\n\n\n"
     floor3_minigame_gameoverwrong: .asciiz " @@@@@@@@   @@@@@@   @@@@@@@@@@   @@@@@@@@            @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   \n@@@@@@@@@  @@@@@@@@  @@@@@@@@@@@  @@@@@@@@           @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  \n!@@        @@!  @@@  @@! @@! @@!  @@!                @@!  @@@  @@!  @@@  @@!       @@!  @@@  \n!@!        !@!  @!@  !@! !@! !@!  !@!                !@!  @!@  !@!  @!@  !@!       !@!  @!@  \n!@! @!@!@  @!@!@!@!  @!! !!@ @!@  @!!!:!             @!@  !@!  @!@  !@!  @!!!:!    @!@!!@!   \n!!! !!@!!  !!!@!!!!  !@!   ! !@!  !!!!!:             !@!  !!!  !@!  !!!  !!!!!:    !!@!@!    \n:!!   !!:  !!:  !!!  !!:     !!:  !!:                !!:  !!!  :!:  !!:  !!:       !!: :!!   \n:!:   !::  :!:  !:!  :!:     :!:  :!:                :!:  !:!   ::!!:!   :!:       :!:  !:!  \n::: ::::  ::   :::  :::     ::    :: ::::           ::::: ::    ::::     :: ::::  ::   :::  \n:: :: :    :   : :   :      :    : :: ::             : :  :      :      : :: ::    :   : :  \n                                                                                             \n\n> You typed the wrong number and got caught!\n\n\n"
 
+    floor5_firsthalf_dialog1: .asciiz "*** After you get ouf of the elevator you just repaired, Ercan Korkut greets you with his arms crossed. ***\n\n"
+    floor5_firsthalf_dialog2: .asciiz "Ercan: You have finally shown yourself..\n\n"
+    floor5_firsthalf_dialog3: .asciiz "Ercan: It was such a surprise that such a failure like you managed to reach here. But it ends here I fear.\n\n"
+    floor5_firsthalf_dialog4: .asciiz "Ercan: You should have left this Campus and never came back. But its too late now. I'll make sure that you will join the others after I defeat you.\n\n"
+    floor5_firsthalf_dialog5: .asciiz "Player: You are poisoned by the power granted you by the people who have trusted you!\n\n"
+    floor5_firsthalf_dialog6: .asciiz "Player: You have turned all the students, all the professors into your puppets.\n\n"
+    floor5_firsthalf_dialog7: .asciiz "Player: Today your reign of manipulation will end. I will end it.\n\n\n"
+
+    floor5_firsthalf_dialog8: .asciiz "Ercan: You? Are you going to do that all by yourself? Don't be silly now.\n\n"
+    floor5_firsthalf_dialog9: .asciiz "Ercan: You are just another small error in my system, and I will fix it.\n\n"
+    floor5_firsthalf_dialog10: .asciiz "Player: You should have educated people not turning them into brainwashed zombies.\n\n"
+    floor5_firsthalf_dialog11: .asciiz "Player: I was a big fan of your works, your efforts on making people go beyond their true potentials.\n\n"
+    floor5_firsthalf_dialog12: .asciiz "Player: You underestimate your student professor. I have found it. I found the ancient texts hidden in the depths of the library!\n\n"
+    floor5_firsthalf_dialog13: .asciiz "Ercan: So you did it. You really entered the forbidden room. It won't change a thing anyway. Enough talking, let's end this.\n\n\n"
+
+    floor5_firsthalf_after1: .asciiz "Ercan: What did I do... This program has taken over me. Instead of brainwashing young people, I should have educated them.\n\n"
+    floor5_firsthalf_after2: .asciiz "Ercan: How did you realize what was happening?\n\n"
+    floor5_firsthalf_after3: .asciiz "Player: Professor Buse, she told me everything before being captured. Thanks to her, I wasn't affected by anything.\n\n"
+    floor5_firsthalf_after4: .asciiz "Player: It's not too late to correct what you have done. How can we fix the students?\n\n"
+    floor5_firsthalf_after5: .asciiz "Ercan: We can fix the students with a program called Yetkin-Gencler.\n\n"
+    floor5_firsthalf_after6: .asciiz "Muhammer: You will never be able to stop me. It's too late now...\n\n"
+    floor5_firsthalf_after7: .asciiz "Player & Ercan: ???\n\n"
+    floor5_firsthalf_after8: .asciiz "Muhammer: It's time to face me.\n\n\n"
+
+    floor5_ercan_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n++++---===+*++==++===================+====--======+**##%%%%%%%%%#######***++++*#*+***##*==\n+++=======+*+===++===+*####***#####*****+=====**+*####%%%%##***********#**+++*#*++**+***+=\n++====++*+++====+++**##%%####%%%%%%%####**+++++#######*++***********####****%%#****++**+==\n++**+====**+====++******+++++++*********##**+=+*######%%##%%@@%%%%%%##****#%%#**###*++++==\n+++##*+===*#*+==+******++++***##%#########**+=++*########********+**##****##*****##*++++==\n+++*#*++===++*#*********#%%##%%%#**########-----+##*******+++++++++++++++***+****+*+++++==\n+++++*++++=+++++*++**#####******+++*+*****+-----=+*+++++++++++++======++*+++***##+++==++==\n+++++++++##+++++++**+++++++====+++++++++++==----==++++================++++++**###+++==++==\n+++++++++#*+++++===========+++++++++==+++===-----====++========-----=====++***#***++++++==\n+++++++=+*+=++++++====================++===-------=+++*+=======--=======+++***#*#+==+*+++=\n++++++++=+++++++++++=====-------====+**++==-------=+*++**++++===========+++**#*#*++++*+++=\n+++++++++==+++++++=++=========+=+++**+=-===------==++=-=****+===----====++++*#*#*++++*++++\n++++++++++==++++++======-------=++***=-=====--=--==++==++**#*++=========+++*******+++*++++\n+++++++++++=+++++======-----===+****++=+++++==++++******+=++****+++=++++++*******#****++++\n++++++++++*===++=============++**+++++*#%%********#%%#*++=====+****+++++*********##****+++\n++++++++++++==++=++++++====+++***=====++*#######%%#**++=========*##*************###****+++\n++++++++++++++*+==+++++++++*****++=====+++**#####**+++===========**#************####****++\n++++++++++++++*+=+++*++++*****+===+++++++**###%##*****+*+***##*+++**+++********#%###****++\n+++++++++++++++*+++++++******+=+*#####*****#*#****##**###%%%%%%%*+++==+++******%@%%##****+\n+++++++++++++++*+=++++++++++*+*####%%#####*#########*****#**++**+=====+++*****#%%@@%##***+\n+++++++++++++++**++++++++====++*++++++++=======+===-===+++++++==--====++*+++*##@@@@@@@%#*+\n++++++++++++++****++++++++=======--====+==-----======+++++*===----==+++**+**#*#@@@@@@@@@%#\n++++++++++++++*****+++++++++===------==+===++++++=++==+*++==-=----=++***++*###*@@@@@@@@@@@\n+++++++++++++++******+++++++++=-::---====-==-==+=======++===---::-=+***++**##**@@@@@@@@@@@\n+++++++++++++++*****#**++****++-::::--===============+=====---:::-=******###*+#@@@@@@@@@@@\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
+    floor5_muhammer_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n%%%%%%%%%%%%%%#######((//******,,,,,***************/(#####/(#((((/#//&&&&&&&&&&&\n%%%%%%%%%%%%#(#(#(***,,,,,,,,,,,,,,,********,,,,,***/(########((/(//((%&&&&&&&&&\n%%%%%%%%%%###(((,.,,,,,,,,***,,**,,,,,,,,*,,,,,,,****/((###%%%%%(/(((#&&&&&&&&&&\n%%#%%%%%%%##((*,,,,,,,,,,**********,,,,**,,,,,,*,****//(((#%%####((#(#&&&&&&&&&&\n%%%%%%%%%#(#((***************************************/((((##%%%##(#((#&%&&&&&&&&\n%%%%%%%%%##(#****//*********************,******,******/(#/#####(((##((%%&&&&&%%%\n%%%%%%%%%#(((***///*************,,,,,****************///((((##(##/(((&%%%&&&%%%%\n%##%%%%%%#(#(*/*****************,,,,,,,,***************/(#####(#((##(/%%%%&%%%%%\n%%%%%%%%%####////**************************************/(#&%%%####(,,,.(&%%&%%%%\n###%%%#####%%(//************//*////(####(((////*********(#%&%%###((##(((*&%%%%%%\n#####%%#####%%//((((((((((/**((###%#((/(/*//*///********//(#%###////////*(&%%%%%\n####%%%%%%%###/((/*(##%%%##****((###%(%%(//((#(/*********//((//(#(/////**%%%%%%%\n%%%###%%%%%###%/(%%%&(//((/,,,*////((((////*********////////**,(((/*//*#%%%%%%%%\n#######%%%%%%##///((((((((*,,,**,***/(((/////*,****/////*///***/(/**/*%%%%%%%%%%\n#%##############/*//(((##/*,,**,******,**********///*/****/*/****//**&%%%%%%%%%%\n#############%%#%//**///***,,,,**///***,,,*******//*//*******/,,,,,*%%%%%%%%%%%%\n######%%####%%%%%%(/***************/(/**************/********/****%%%%%%%%%%%%%%\n################%%#//***//****/#&%#(**///*****************///*#%%%%%%%%%%%%%%%%%\n################%%#/////////(##(************************/////*&&&&%&%%%%%%%%%%%%\n####################////***////(***********************//////*%%&&&&&%%&&%%%&&&&\n####%############%##*///////((*/(#(((//////********//////((//*/&&&&&%%%%%%%%%&&&\n####################,(///(#//**********/////****////////((///**&%&&&&&&&&&%%%%%%\n######%#############, #//((((((((((((//////////////////((////**,*&&&%&&&&&&&&&&&\n####################,  #((((((((((((///****/////((////////////**./&&&&&&&&&&&&&&\n####################*   %(#(//////**,******/((((((((/////////**,  (#&%&&&&&&&&&&\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
+
+    bossfight_instruction: .asciiz "Write the answer to this equation as quickly as possible and press enter: "
+    bossfight_plus: .asciiz " + "
+
+    bossfight_ercan_inbattle1: .asciiz "Ercan: Ugh-! You're useless!\n\n"
+    bossfight_ercan_inbattle2: .asciiz "Ercan: Oof! Your attacks cannot defeat me!\n\n"
+    bossfight_ercan_inbattle3: .asciiz "Ercan: Argh-! This is your end!\n\n"
+	bossfight_ercan_hitplayer_dialog: .asciiz "Ercan: Take this!\n\n> You took "
+
 .text
 main:
     clearterminal
@@ -401,7 +436,7 @@ debugmenu:
 
     # check if user entered 2
     li $t1, 2
-    beq $t0, $t1, floor2_officefight
+    beq $t0, $t1, floor5_firsthalf_fight
    
     # check if user entered 3 
     li $t1, 3
@@ -1048,7 +1083,7 @@ floor1_ilkayfight:
         clearterminal
         print(floor1_ilkay_ascii)
         printstats
-	printrandom(floor1_ilkay_inbattle1, floor1_ilkay_inbattle2, floor1_ilkay_inbattle3)
+	    printrandom(floor1_ilkay_inbattle1, floor1_ilkay_inbattle2, floor1_ilkay_inbattle3)
         print(floor0_guards_takehit1)
         printregister($t4)
         print(floor0_guards_takehit2)
@@ -1108,30 +1143,30 @@ floor2_studentfight:
     addi $t9, $t9, 15000 # Give 15 seconds to the user
 
 floor2_studentfight_loop:
-        li $v0, 30
-        syscall
-        move $t8, $a0 # Store time in $t8
-        bgt $t8, $t9, floor2_studentfight_turn_ends # if $t8 > $t9 exit the loop
+    li $v0, 30
+    syscall
+    move $t8, $a0 # Store time in $t8
+    bgt $t8, $t9, floor2_studentfight_turn_ends # if $t8 > $t9 exit the loop
 
-        clearterminal
-        print(floor2_student_ascii)
-        printstats
+    clearterminal
+    print(floor2_student_ascii)
+    printstats
 
-        randomness(89999, 10000)
+    randomness(89999, 10000)
 
-        print(testfight_instruction)
-        printregister($t5)
-        print(newline)
-        print(answer_prompt)
+    print(testfight_instruction)
+    printregister($t5)
+    print(newline)
+    print(answer_prompt)
 
-        li $v0, 5 # system call code for reading an integer
-        syscall # read integer from user and store in $v0
-        beq $v0, $t5, floor2_studentfight_correct # branch to label 'equal' if $v0 == $t5
+    li $v0, 5 # system call code for reading an integer
+    syscall # read integer from user and store in $v0
+    beq $v0, $t5, floor2_studentfight_correct # branch to label 'equal' if $v0 == $t5
+    j floor2_studentfight_loop
+
+    floor2_studentfight_correct:
+        addi $t4, $t4, 1
         j floor2_studentfight_loop
-
-        floor2_studentfight_correct:
-            addi $t4, $t4, 1
-            j floor2_studentfight_loop
    
     floor2_studentfight_turn_ends:
         li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
@@ -1538,7 +1573,7 @@ floor3_librarianfight:
     move $t9, $a0 # Store starting time in $t9
     addi $t9, $t9, 15000 # Give 15 seconds to the user
 
-floor3_librarianfight_loop:
+    floor3_librarianfight_loop:
         li $v0, 30
         syscall
         move $t8, $a0 # Store time in $t8
@@ -1563,7 +1598,7 @@ floor3_librarianfight_loop:
         floor3_librarianfight_correct:
             addi $t4, $t4, 1
             j floor3_librarianfight_loop
-   
+    
     floor3_librarianfight_turn_ends:
         li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
@@ -1626,4 +1661,161 @@ floor3_librarianfight_loop:
         fakebreakpoint
 
         j debugmenu
+
+
+floor5_firsthalf_fight:    
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    li $t5, 0
+
+    clearterminal
+    print(floor5_ercan_ascii)
+    printstats()
+
+    print(floor5_firsthalf_dialog1)
+    sleep(3000)
+    print(floor5_firsthalf_dialog2)
+    sleep(3000)
+    print(floor5_firsthalf_dialog3)
+    sleep(3000)
+    print(floor5_firsthalf_dialog4)
+    sleep(3000)
+    print(floor5_firsthalf_dialog5)
+    sleep(3000)
+    print(floor5_firsthalf_dialog6)
+    sleep(3000)
+    print(floor5_firsthalf_dialog7)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor5_ercan_ascii)
+    print(floor5_firsthalf_dialog8)
+    sleep(3000)
+    print(floor5_firsthalf_dialog9)
+    sleep(3000)
+    print(floor5_firsthalf_dialog10)
+    sleep(3000)
+    print(floor5_firsthalf_dialog11)
+    sleep(3000)
+    print(floor5_firsthalf_dialog12)
+    sleep(3000)
+    print(floor5_firsthalf_dialog13)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor5_ercan_ascii)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+    floor5_firsthalf_fight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor5_firsthalf_fight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(floor5_ercan_ascii)
+        printstats
+
+        randomness(40, 10)
+        move $t6, $t5
+        randomness(40, 10)
+        move $t7, $t5
+        add $t5, $t5, $t6
+
+        print(bossfight_instruction)
+        printregister($t6)
+        print(bossfight_plus)
+        printregister($t7)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor5_firsthalf_fight_correct # branch to label 'equal' if $v0 == $t5
+        j floor5_firsthalf_fight_loop
+
+        floor5_firsthalf_fight_correct:
+            addi $t4, $t4, 1
+            j floor5_firsthalf_fight_loop
+    
+    floor5_firsthalf_fight_turn_ends:
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor5_firsthalf_fight_enemydead # check if enemy is dead
+
+        randomness(39, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(floor5_ercan_ascii)
+        printstats
+        
+        printrandom(bossfight_ercan_inbattle1, bossfight_ercan_inbattle2, bossfight_ercan_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(bossfight_ercan_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2) # leave
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+        j floor5_firsthalf_fight_loop
+
+    floor5_firsthalf_fight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(floor5_ercan_ascii)
+        printstats
+        printrandom(bossfight_ercan_inbattle1, bossfight_ercan_inbattle2, bossfight_ercan_inbattle3)
+        print(floor0_guards_takehit1)
+        printregister($t4)
+        print(floor0_guards_takehit2)
+        print(enemyvanquished)
+        fakebreakpoint
+
+        clearterminal
+        print(floor5_ercan_ascii)
+        printstats
+        print(floor5_firsthalf_after1)
+        sleep(3000)
+        print(floor5_firsthalf_after2)
+        sleep(3000)
+        print(floor5_firsthalf_after3)
+        sleep(3000)
+        print(floor5_firsthalf_after4)
+        sleep(3000)
+        print(floor5_firsthalf_after5)
+        sleep(3000)
+        print(floor5_firsthalf_after6)
+        sleep(3000)
+        print(floor5_firsthalf_after7)
+        sleep(3000)
+        print(floor5_firsthalf_after8)
+        sleep(3000)
+        fakebreakpoint
+
 end:
