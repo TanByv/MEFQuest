@@ -89,7 +89,7 @@
 # Dialog Randomizer Macro
 .macro printrandom($text1, $text2, $text3)
     move $t6, $t5
-    randomness(2, 0)
+    randomness(3, 0)
     beq $t5, 0, print_text1
     beq $t5, 1, print_text2
     j print_text3
@@ -249,6 +249,27 @@
     floor2_student_afterfight3: .asciiz "Student: No my head is spinning... Leave me alone!\n\n"
     floor2_student_afterfight4: .asciiz "Player: (It's really exhausting to try talk with those guys... I might find something useful in the Registrar Office.)\n\n\n"
 
+    floor3_minigame_ascii1: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                            @@@@                                           @@@@                                           @@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                         @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                        @@---------@@                                  @@---------@@                                  @@---------@@\n                 =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                OO    []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n               OxxO   []  |_______|  []                              []  |_______|  []                              []  |_______|  []\n        ####### OO    []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n      // #######      []  ||_____||  []                              []  ||_____||  []                              []  ||_____||  []\nJJ===// ||     \\\\\\zz  []  ||     ||  [|                              []  ||     ||  [|                              []  ||     ||  [|\n J      ||      \\\\    []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n   JJ===||       ==   []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n  \n\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
+    floor3_minigame_ascii2: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                            @@@@                                           @@@@                                           @@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                         @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                        @@---------@@                                  @@---------@@                                  @@---------@@\n                 =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                      []@@|       |@@[]                   OO         []@@|       |@@[]                              []@@|       |@@[]\n                      []  |_______|  []                  OxxO        []  |_______|  []                              []  |_______|  []\n                      []  ||     ||  []           ####### OO         []  ||     ||  []                              []  ||     ||  []\n                      []  ||_____||  []         // #######           []  ||_____||  []                              []  ||_____||  []\n                      []  ||     ||  [|   JJ===// ||     \\\\\\zz       []  ||     ||  [|                              []  ||     ||  [|\n                      []  ||     ||  []    J      ||      \\\\         []  ||     ||  []                              []  ||     ||  []\n                      []  ||     ||  []      JJ===||       ==        []  ||     ||  []                              []  ||     ||  []\n                                              J\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
+    floor3_minigame_ascii3: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                             @@@@                                           @@@@                                           @@@@\n                             @@@@@                                          @@@@@                                          @@@@@\n                             @@@@@                                          @@@@@                                          @@@@@\n                          @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                         @@---------@@                                  @@---------@@                                  @@---------@@\n                  =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                       []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                       []@@|       |@@[]                              []@@|       |@@[]                     OO       []@@|       |@@[]\n                       []  |_______|  []                              []  |_______|  []                    OxxO      []  |_______|  []\n                       []  ||     ||  []                              []  ||     ||  []             ####### OO       []  ||     ||  []\n                       []  ||_____||  []                              []  ||_____||  []           // #######         []  ||_____||  []\n                       []  ||     ||  [|                              []  ||     ||  [|     JJ===// ||     \\\\\\zz     []  ||     ||  [|\n                       []  ||     ||  []                              []  ||     ||  []      J      ||      \\\\       []  ||     ||  []\n                       []  ||     ||  []                              []  ||     ||  []        JJ===||       ==      []  ||     ||  []\n                            \n\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
+    floor3_minigame_ascii4: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                            @@@@                                           @@@@                                           @@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                         @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                        @@---------@@                                  @@---------@@                                  @@---------@@\n                 =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]                   OO\n                      []  |_______|  []                              []  |_______|  []                              []  |_______|  []                  OxxO\n                      []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []           ####### OO\n                      []  ||_____||  []                              []  ||_____||  []                              []  ||_____||  []         // #######\n                      []  ||     ||  [|                              []  ||     ||  [|                              []  ||     ||  [|   JJ===// ||     \\\\\\zz\n                      []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []    J      ||      \\\\\n                      []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []      JJ===||       ==\n                                                                                                                                            J\n                            \n\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
+    floor3_minigame_dialog1: .asciiz "Player: (I've reached the library hall but there are so many students. They are all focused on those brainwashing videos though.)\n\n"
+    floor3_minigame_dialog2: .asciiz "Player: (I may be able to sneak in, I can't fight with all of them.)\n\n\n"
+
+    floor3_minigame_instructions: .asciiz "Quick time event! You have to type the singular number shown on screen and then press enter as quickly as you can!\n\n\n"
+    floor3_minigame_prompt1: .asciiz "Type "
+    floor3_minigame_prompt2: .asciiz " and press enter as quickly as you can!\n\n"
+
+    floor3_after_hallway: .asciiz "Player: (That was close...)\n\n"
+    floor3_before_toasterguy: .asciiz "Another encounter with the toaster guy.\n\n\n"
+
+    floor3_toasterguy_dialog1: .asciiz "Toaster Guy: How is going? Have you found a way?\n\n"
+    floor3_toasterguy_dialog2: .asciiz "Player: Aye, I got some intel, I should find some kind of ancient information inside the Library to defeat him.\n\n"
+    floor3_toasterguy_dialog3: .asciiz "Toaster Guy: Nice, in any case if you need this *Offers a pizza toast*\n\n"
+    floor3_toasterguy_dialog4: .asciiz "Player: Thanks man.\n\n\n"
+
+    floor3_minigame_gameoverslow: .asciiz " @@@@@@@@   @@@@@@   @@@@@@@@@@   @@@@@@@@            @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   \n@@@@@@@@@  @@@@@@@@  @@@@@@@@@@@  @@@@@@@@           @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  \n!@@        @@!  @@@  @@! @@! @@!  @@!                @@!  @@@  @@!  @@@  @@!       @@!  @@@  \n!@!        !@!  @!@  !@! !@! !@!  !@!                !@!  @!@  !@!  @!@  !@!       !@!  @!@  \n!@! @!@!@  @!@!@!@!  @!! !!@ @!@  @!!!:!             @!@  !@!  @!@  !@!  @!!!:!    @!@!!@!   \n!!! !!@!!  !!!@!!!!  !@!   ! !@!  !!!!!:             !@!  !!!  !@!  !!!  !!!!!:    !!@!@!    \n:!!   !!:  !!:  !!!  !!:     !!:  !!:                !!:  !!!  :!:  !!:  !!:       !!: :!!   \n:!:   !::  :!:  !:!  :!:     :!:  :!:                :!:  !:!   ::!!:!   :!:       :!:  !:!  \n::: ::::  ::   :::  :::     ::    :: ::::           ::::: ::    ::::     :: ::::  ::   :::  \n:: :: :    :   : :   :      :    : :: ::             : :  :      :      : :: ::    :   : :  \n                                                                                             \n\n> You were too slow and got caught!\n\n\n"
+    floor3_minigame_gameoverwrong: .asciiz " @@@@@@@@   @@@@@@   @@@@@@@@@@   @@@@@@@@            @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   \n@@@@@@@@@  @@@@@@@@  @@@@@@@@@@@  @@@@@@@@           @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  \n!@@        @@!  @@@  @@! @@! @@!  @@!                @@!  @@@  @@!  @@@  @@!       @@!  @@@  \n!@!        !@!  @!@  !@! !@! !@!  !@!                !@!  @!@  !@!  @!@  !@!       !@!  @!@  \n!@! @!@!@  @!@!@!@!  @!! !!@ @!@  @!!!:!             @!@  !@!  @!@  !@!  @!!!:!    @!@!!@!   \n!!! !!@!!  !!!@!!!!  !@!   ! !@!  !!!!!:             !@!  !!!  !@!  !!!  !!!!!:    !!@!@!    \n:!!   !!:  !!:  !!!  !!:     !!:  !!:                !!:  !!!  :!:  !!:  !!:       !!: :!!   \n:!:   !::  :!:  !:!  :!:     :!:  :!:                :!:  !:!   ::!!:!   :!:       :!:  !:!  \n::: ::::  ::   :::  :::     ::    :: ::::           ::::: ::    ::::     :: ::::  ::   :::  \n:: :: :    :   : :   :      :    : :: ::             : :  :      :      : :: ::    :   : :  \n                                                                                             \n\n> You typed the wrong number and got caught!\n\n\n"
 
 .text
 main:
@@ -268,11 +289,11 @@ debugmenu:
 
     # check if user entered 1
     li $t1, 1
-    beq $t0, $t1, floor1_ilkayfight
+    beq $t0, $t1, testfight
 
     # check if user entered 2
     li $t1, 2
-    beq $t0, $t1, end
+    beq $t0, $t1, floor3_slither_minigame
    
     # check if user entered 3 
     li $t1, 3
@@ -1066,5 +1087,137 @@ floor2_studentfight_loop:
         fakebreakpoint
 
         j debugmenu
+
+floor3_slither_minigame:
+    clearterminal
+    print(floor3_minigame_ascii1)
+    print(floor3_minigame_dialog1)
+    sleep(3000)
+    print(floor3_minigame_dialog2)
+    sleep(3000)
+    print(floor3_minigame_instructions)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor3_minigame_ascii1)
+
+    randomness(9, 0)
+    print(floor3_minigame_prompt1)
+    printregister($t5)
+    print(floor3_minigame_prompt2)
+    print(answer_prompt)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+    # read integer from user
+    li $v0, 5
+    syscall
+    move $t0, $v0
+
+    li $v0, 30
+    syscall
+    move $t8, $a0 # Store time in $t8
+    bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+    # check if user entered correct
+    move $t1, $t5
+    beq $t0, $t1, minigame_correct1
+
+    # WRONG
+    j floor3_minigame_gameover_incorrect
+
+    minigame_correct1:
+        clearterminal
+        print(floor3_minigame_ascii2)
+
+        randomness(9, 0)
+        print(floor3_minigame_prompt1)
+        printregister($t5)
+        print(floor3_minigame_prompt2)
+        print(answer_prompt)
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+        # read integer from user
+        li $v0, 5
+        syscall
+        move $t0, $v0
+
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+        # check if user entered correct
+        move $t1, $t5
+        beq $t0, $t1, minigame_correct2
+
+        # WRONG
+        j floor3_minigame_gameover_incorrect
+
+        minigame_correct2:
+            clearterminal
+            print(floor3_minigame_ascii3)
+
+            randomness(9, 0)
+            print(floor3_minigame_prompt1)
+            printregister($t5)
+            print(floor3_minigame_prompt2)
+            print(answer_prompt)
+
+            # Get current time before user input
+            li $v0, 30
+            syscall
+            move $t9, $a0 # Store starting time in $t9
+            addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+            # read integer from user
+            li $v0, 5
+            syscall
+            move $t0, $v0
+
+            li $v0, 30
+            syscall
+            move $t8, $a0 # Store time in $t8
+            bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+            # check if user entered correct
+            move $t1, $t5
+            beq $t0, $t1, minigame_correct3
+
+            # WRONG
+            j floor3_minigame_gameover_incorrect
+
+            minigame_correct3:
+                clearterminal
+                print(floor3_minigame_ascii4)
+                print(floor3_after_hallway)
+                print(floor3_before_toasterguy)
+                fakebreakpoint
+
+                j debugmenu #librarian fight
+
+
+floor3_minigame_gameover_tooslow:
+    clearterminal
+    print(floor3_minigame_gameoverslow)
+    fakebreakpoint
+    j main
+
+floor3_minigame_gameover_incorrect:
+    clearterminal
+    print(floor3_minigame_gameoverwrong)
+    fakebreakpoint
+    j main
+
 
 end:
