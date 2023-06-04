@@ -88,6 +88,7 @@
 
 # Dialog Randomizer Macro
 .macro printrandom($text1, $text2, $text3)
+    move $t6, $t5
     randomness(2, 0)
     beq $t5, 0, print_text1
     beq $t5, 1, print_text2
@@ -95,12 +96,18 @@
 
     print_text1:
         print($text1)
+        j macroend
 
     print_text2:
         print($text2)
+        j macroend
 
     print_text3:
         print($text3)
+        j macroend
+
+    macroend:
+        move $t5, $t6
 .end_macro
 
 # Notes from Tan:
@@ -130,6 +137,7 @@
     debugoptions: .asciiz "[1] Test fight\n[2] Nothingness\n[3] Floor3_Elevator\n"
 
     startmenu_prompt: .asciiz "Do you want to start the game?\n[1] Start the game\n[2] Use checkpoint code\n"
+    enemyvanquished: .asciiz "\n\n@@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@@@   @@@ @@@           @@@  @@@   @@@@@@   @@@  @@@   @@@@@@    @@@  @@@  @@@   @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   \n@@@@@@@@  @@@@ @@@  @@@@@@@@  @@@@@@@@@@@  @@@ @@@           @@@  @@@  @@@@@@@@  @@@@ @@@  @@@@@@@@   @@@  @@@  @@@  @@@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@@  \n@@!       @@!@!@@@  @@!       @@! @@! @@!  @@! !@@           @@!  @@@  @@!  @@@  @@!@!@@@  @@!  @@@   @@!  @@@  @@!  !@@       @@!  @@@  @@!       @@!  @@@  \n!@!       !@!!@!@!  !@!       !@! !@! !@!  !@! @!!           !@!  @!@  !@!  @!@  !@!!@!@!  !@!  @!@   !@!  @!@  !@!  !@!       !@!  @!@  !@!       !@!  @!@  \n@!!!:!    @!@ !!@!  @!!!:!    @!! !!@ @!@   !@!@!            @!@  !@!  @!@!@!@!  @!@ !!@!  @!@  !@!   @!@  !@!  !!@  !!@@!!    @!@!@!@!  @!!!:!    @!@  !@!  \n!!!!!:    !@!  !!!  !!!!!:    !@!   ! !@!    @!!!            !@!  !!!  !!!@!!!!  !@!  !!!  !@!  !!!   !@!  !!!  !!!   !!@!!!   !!!@!!!!  !!!!!:    !@!  !!!  \n!!:       !!:  !!!  !!:       !!:     !!:    !!:             :!:  !!:  !!:  !!!  !!:  !!!  !!:!!:!:   !!:  !!!  !!:       !:!  !!:  !!!  !!:       !!:  !!!  \n:!:       :!:  !:!  :!:       :!:     :!:    :!:              ::!!:!   :!:  !:!  :!:  !:!  :!: :!:    :!:  !:!  :!:      !:!   :!:  !:!  :!:       :!:  !:!  \n :: ::::   ::   ::   :: ::::  :::     ::      ::               ::::    ::   :::   ::   ::  ::::: :!   ::::: ::   ::  :::: ::   ::   :::   :: ::::   :::: ::  \n: :: ::   ::    :   : :: ::    :      :       :                 :       :   : :  ::    :    : :  :::   : :  :   :    :: : :     :   : :  : :: ::   :: :  :   \n\n"
 
     testfight_guards: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n                \n                \n                                            #                                               #\n                              {}            | `_' `-' `_' `-' `_' `' `-' `_' `-' `_' `' `-' |            {}\n                             .--.           |                                               |           .--.\n                            /.--.\\          |                                               |          /.--.\\                                                              \n                            |====|          |                                               |          |====|\n                            |`::`|          |                                               |          |`::`|\n                        .-;`\\..../`;_.-^-._ |                                               |      .-;`\\..../`;_.-^-._\n                 /\\\\   /  |...::..|`   :   `|                                               /\\\\   /  |...::..|`   :   `|\n                 |:'\\ |   /'''::''|   .:.   |                                               |:'\\ |   /'''::''|   .:.   | \n                @|\\ /\\;-,/\\   ::  |..:::::..|                                               |\\ /\\;-,/\\   ::  |..:::::..|\n                `||\\ <` >  >._::_.| ':::::' |                                               ||\\ <` >  >._::_.| ':::::' |\n                 || `''`  /   ^^  |   ':'   |                                               || `''`  /   ^^  |   ':'   |\n                 ||       |       \\    :    |                                               ||       |       \\    :    /   \n                 ||       |        \\   :   /|                                               ||       |        \\   :   /\n                 ||       |___/\\___|`-.:.-` |                                               ||       |___/\\___|`-.:.-`\n                 ||        \\_ || _/    `    |                                               ||        \\_ || _/    `\n                 ||        <_ >< _>         |                                               ||        <_ >< _>     \n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||        |  ||  |         |                                               ||        |  ||  |\n                 ||       _\\.:||:./_        |                                               ||       _\\.:||:./_\n                 \\/      /____/\\____\\       T                                               \\/      /____/\\____\\\n                \n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
     testfight_dialog: .asciiz "hello world 123\n\n"
@@ -147,7 +155,26 @@
     elevator_q5: .asciiz "The caches hold recently accessed data.\n[1]True\n[2]False\n"
 
     floor0_backstory_art: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n	kxxxxdddddddxOxdoodolddodxxoddoll:ccoxoxockk:,colcl:,;;c:,,,'';'.oXKOKXXNNNN0KWNNNdc0XXNxlKNNNKXNW0lkWWxdNWNXWXoxNxoXNXNOdKkxNWWWXdcc::;,,''\n	kdoddoooooooddooolollddlllcclc:;;:lc::;cc:lo;,clc:c:,,,;::,...,'.lXKk0XKKXKK0KNNNNdcOXKXdl0XKX0KXNOckWNdoXWXXWXokMkoXWNWOo0kdNWNWKc.''',,,;:\n	Okxkdlllllllllodollcldoc:;;;:;,';:lc,''',,';,.'','';'..,cc,...;..lK0k0XXXXKKOOKKKXd:xOkklcOKKKOO0KkcxXXdlKNXXWNdxWOoKWNWKd0OxXWWWXl,:;,;;;;:\n	OOO0Oolllllllclollollolcccc::;'';:c:,'',,,',,...'..,;..'c:....;..ckOkOKK0K00Ok0OO0o:k0OOocOXXX00KXOcdK0olKWNXWNdxWOoKWNWKd0OdXWWMNxcloodddxx\n	OkOOxlllccc:::colllccllccc:;:;,;::c:,'',,..,;'..'..,;..'c:...':;'ckk |  \\/  | __| __| | | | |_ _ (_)_ _____ _ _ __(_) |_ _  _ WWWW0xxxxxddoo\n	0OkOdcc:;:::::clcllccllc::;;:;;;::c:::;:;,.,;;'.'..;:;;cclllllccldkk | |\\/| | _|| _|  | |_| | ' \\| \\ V / -_) '_(_-< |  _| || |WWWNd.........\n	0Okko;;;;::::;clcllccccc:::;;::c::l::cclc::cccc:cloolloooooollcccdkO |_|  |_|___|_|    \\___/|_||_|_|\\_/\\___|_| /__/_|\\__|\\_, |0WWWWx,;,;:...\n	OOOkc'',,;;;;;clcllc:c::::::::cllclllolodolooollccc:::;;;,''....'okkoodddooodxxdddxkxxxxxxxxxkOOkxk00OkOOkO00k0K00XKKKKKK|__/ x0WWWWx':;;l'.\n	kkOk:..'',,,,,:ccllcllllllollllloc:::;,,,,'........             .:looodddooodxxdddxkxxxxxxxxxkOOkxk00OkOOkO00k0K00XKKKKKXKXXKXXNNNKdlccl::;,\n	xdddl:ccccclllddxxl::;;,,'''.......                     .          ..'''.'............'''',,,;:::::ccc:cccclolodddxxxkOOOO0K0KKKXXNk;;;,;;;;\n	kxxd:'''''''',,,,,'..........................                       ,::::l,                       ..  ..'.    .. .........';;'';;;;'........\n	kooo.            ..',,::,''''................. .      .   .    .....:doodkc. ....  ...          ....  .:dc             . .'l:  .'....  .  ..\n	dllc.       ..  ....'''..................  ......     .....    .....ckkkk0l.  ...  .......   .......  'lOo.  ........,,,'.:ko'',;,....     .\n	lcc;....... ..  .,..'.......................'................ .....'lOkOOKo.  ... ........   ....';,..,o0d. ........:occ:,lOo..,:c,..      ;\n	c'............  ':.......  .. ..............,................ .,,,,,o0OO0Ko.  .:. .::;,;;'. ....',,,,';dKx. ........','..,cdl..,;cl:,.     ;\n	c:;,;::;::::;,..,;''.'''.............  . . .,.,'       ...... .... .o0000Kd.  .;. .:cc:cc,......''....:d0Ol::::;:;;;;;,..,c:'...',cc;......:\n	lcc:,:clodxkkkkxdool;;:;;;;;:::;,,''''.....',';,.....  .   ..  .   .o0000Ko.  .....',,,;:,. .....'''.,cdOXXKKKKKKKK00K0Okl;''',;..,lxdddolcx\n	lccccc::clodkxxkxkOOOkxdolc::::;;;;::::c:::c;';,.....  ..  ..  .   .o0000Ko.  .... .. ..... ...''.',,;:dOKKKXXXXXNNXNNNNXd:,;coc..;oXKOK0odX\n	ccccllllc::loc;lccxk000KK0OOOkxdocc:::;;;;:c;';,. ... ... ...      .o0000Ko.   ............'',,;'..',,:d0KxdkkOOkO0OOOOOOd:;,,::'',cdocll::o\n	cccllccllcclc;.,,.,okkOKKKXXXKKK0OOOkxolcc:c:,:;..''''......       .oK00KXd. ....',,,',,;;;;;;;;'.';;,;dOKkoooddddoooooolll::;',,;;:::::;;;:\n	ooooooloolc::,',..,lkxxOXXXKKKKK00KXXK0000Okxddddxxxxxdlc:;;;;;;;:ccxK00KKx,'',,;;;;;::::cccllc;;:,',;ldkOkl;:c:;:;,,,,,,,,,,:::::::::::::::\n	:oxkxddddoc:,':l:;,;lloOXKKK0KKKXKKKK000KKK0KK0OOkxddxxxxxxxxdddlodcdK000Kklccllllllloooolllll:,,;,..,:ldxkkkOkkxxxdddoolollllcccc::cl;,,,;:\n	.,coddddoc:;'';ll,.,ooxKXXXXXXXXXXXXXXKKKKKK00KKKKK00OOkkxxxxddddddlxKKKKXOxxooddollllccccccc:;,'...,:;,,:oldxlxOxk00000KK000KK0K0kxkklcdoco\n	,;clooolll:;'.';;:;:lokKXXXXXXXXXXXXXXXKKKKKKKXXKKKKKKKKKKK0OkOOkxxxk000Oxolccccc::;;;;;;;;;;;,'''','';,,;;;;;,::,clcolckOolodxdlkx;;c;,::,;\n	cccclddlccc::;;,';:;;:dKXKKXXKXKKKK000KKXXKKKXXXXXXXKKKKKXXXKKKKK00OOOOOOkkkxddooolcc::;;:;,,,',;;',;,,;,;,;;;;;::;;:;;;co:;;;:;;::;;;;;::::\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
-    floor0_backstory_text: .asciiz "Ercan Korkut has declared the program of 'Yetmez Gençler' mandatory for the all students of MEF University.\nHis plans were unpredictable; both students and instructors will become his puppets.\nHe has manipulated everyone with brainwashing videos of 'Yetmez Gençler'.\n\nOne day Ercan has realised that unexpected threat. One of the students were not watching the videos...\nWhen he tried reaching to that student, Ms Yılmaz as has noticed Ercan's plans.\nMs. Yılmaz has reached to the student before Ercan could. She told him about devilish plans of Ercan and he was the only one left who could stop him.\n\nMs. Yılmaz didn't get affected by the videos because she noticed the true purposes of those videos before but Ercan was aware of who watched those videos and who didn't so he took Ms Yılmaz as hostage.\n"
+    floor0_backstory_text: .asciiz "Ercan Korkut has declared the program of 'Yetmez Gencler' mandatory for the all students of MEF University.\n\nHis plans were unpredictable; he wanted both students and instructors to become his puppets.\n\nHe has manipulated everyone with brainwashing videos of 'Yetmez Gencler'.\n\nOne day Ercan noticed a unexpected outlier. One of the students were not watching the videos...\n\nWhen he tried reaching out to that student it was already too late for him, Ms Yılmaz have already figured out Ercan's plans.\n\nMs. Yılmaz has reached to the student before Ercan could. She told him about devilish plans of Ercan and he was the only one left who could stop him.\n\nMs. Yılmaz managed to stay unaffected by the videos because she noticed the true purposes of them. However, Ercan was aware of who watched those videos and who didn't.\n\nNoticing that Ms. Yılmaz manage to resist the brainwashing videos, he set out to capture her.\n\nBy the time you arrive at to the campus almost all studens and school personel have been converted into mindless zombies.\n\nAccepting the sitation you're in, you approach the gates of the campus.\n\n\n"
+
+    sliceview_floor0: .asciiz "_################################################################################\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |    |     xxxxx    |\n  |                 |     |          | |____|  ||  |____| |  | && |     x        |\n  |                 |     |          |  ____ ==||== ____  |  |&&&&|     xxxxx    |\n  |                 |    O|          | |    |  ||  |    | |  |_&&&|         x    |\n  |                 |     |          | |____|  ||  |____| |             xxxxx    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |\\  /|     x   x    |\n  |                 |     |          | |____|  ||  |____| |  | /  |     x   x    |\n  |                 |     |          |  ____ ==||== ____  |  |/ \\ |     xxxxx    |\n  |                 |    O|          | |    |  ||  |    | |  |/__\\|         x    |\n  |                 |     |          | |____|  ||  |____| |                 x    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |\\####|          | |    |  ||  |    | |  | #  |     xxxxx    |\n  |                 | \\###|          | |____|  ||  |____| |  | ## |         x    |\n  |                 |  \\ #|          |  ____ ==||== ____  |  |### |       xxx    |\n  |                 |  |##|          | |    |  ||  |    | |  |____|         x    |\n  |                 | o|##|          | |____|  ||  |____| |             xxxxx    |\n  |_________________|__|__|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  | @@ |     xxxxx    |\n  |                 |     |          | |____|  ||  |____| |  |@@  |         x    |\n  |                 |     |          |  ____ ==||== ____  |  | @@@|     xxxxx    |\n  |                 |    O|          | |    |  ||  |    | |  |@___|     x        |\n  |                 |     |          | |____|  ||  |____| |             xxxxx    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |$$$$|        x     |\n  |                 |     |          | |____|  ||  |____| |  |$$$$|       xx     |\n  |                 |     |          |  ____ ==||== ____  |  | $$ |      x x     |\n  |                 |    O|          | |    |  ||  |    | |  |_$__|        x     |\n  |                 |     |          | |____|  ||  |____| |              xxxxx   |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |    |      xxxxx   |\n  |     __O         |     |          | |____|  ||  |____| |  | @@ |      x   x   |\n  |    / /\\_,       |     |          |  ____ ==||== ____  |  |@@@@|      x   x   |\n  |   ___/\\         |    O|          | |    |  ||  |    | |  |___@|      x   x   |\n  |       /_        |     |          | |____|  ||  |____| |              xxxxx   |\n  |_________________|_____|__________|____________________|______________________|\n\n> Entering Floor 0.\n\n\n "
+    sliceview_floor1: .asciiz "_#################################################################################\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |    |     xxxxx    |\n   |                 |     |          | |____|  ||  |____| |  | && |     x        |\n   |                 |     |          |  ____ ==||== ____  |  |&&&&|     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |_&&&|         x    |\n   |                 |     |          | |____|  ||  |____| |             xxxxx    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |\\  /|     x   x    |\n   |                 |     |          | |____|  ||  |____| |  | /  |     x   x    |\n   |                 |     |          |  ____ ==||== ____  |  |/ \\ |     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |/__\\|         x    |\n   |                 |     |          | |____|  ||  |____| |                 x    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |\\####|          | |    |  ||  |    | |  | #  |     xxxxx    |\n   |                 | \\###|          | |____|  ||  |____| |  | ## |         x    |\n   |                 |  \\ #|          |  ____ ==||== ____  |  |### |       xxx    |\n   |                 |  |##|          | |    |  ||  |    | |  |____|         x    |\n   |                 | o|##|          | |____|  ||  |____| |             xxxxx    |\n   |_________________|__|__|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  | @@ |     xxxxx    |\n   |                 |     |          | |____|  ||  |____| |  |@@  |         x    |\n   |                 |     |          |  ____ ==||== ____  |  | @@@|     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |@___|     x        |\n   |                 |     |          | |____|  ||  |____| |             xxxxx    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |$$$$|        x     |\n   |     __O         |     |          | |____|  ||  |____| |  |$$$$|       xx     |\n   |    / /\\_,       |     |          |  ____ ==||== ____  |  | $$ |      x x     |\n   |   ___/\\         |    O|          | |    |  ||  |    | |  |_$__|        x     |\n   |       /_        |     |          | |____|  ||  |____| |              xxxxx   |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |    |      xxxxx   |\n   |                 |     |          | |____|  ||  |____| |  | @@ |      x   x   |\n   |                 |     |          |  ____ ==||== ____  |  |@@@@|      x   x   |\n   |                 |    O|          | |    |  ||  |    | |  |___@|      x   x   |\n   |                 |     |          | |____|  ||  |____| |              xxxxx   |\n   |_________________|_____|__________|____________________|______________________|\n\n> Entering Floor 1.\n\n\n"
+    sliceview_floor2: .asciiz "_################################################################################\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |    |     xxxxx    |\n  |                 |     |          | |____|  ||  |____| |  | && |     x        |\n  |                 |     |          |  ____ ==||== ____  |  |&&&&|     xxxxx    |\n  |                 |    O|          | |    |  ||  |    | |  |_&&&|         x    |\n  |                 |     |          | |____|  ||  |____| |             xxxxx    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |\\  /|     x   x    |\n  |                 |     |          | |____|  ||  |____| |  | /  |     x   x    |\n  |                 |     |          |  ____ ==||== ____  |  |/ \\ |     xxxxx    |\n  |                 |    O|          | |    |  ||  |    | |  |/__\\|         x    |\n  |                 |     |          | |____|  ||  |____| |                 x    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |\\####|          | |    |  ||  |    | |  | #  |     xxxxx    |\n  |                 | \\###|          | |____|  ||  |____| |  | ## |         x    |\n  |                 |  \\ #|          |  ____ ==||== ____  |  |### |       xxx    |\n  |                 |  |##|          | |    |  ||  |    | |  |____|         x    |\n  |                 | o|##|          | |____|  ||  |____| |             xxxxx    |\n  |_________________|__|__|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  | @@ |     xxxxx    |\n  |     __O         |     |          | |____|  ||  |____| |  |@@  |         x    |\n  |    / /\\_,       |     |          |  ____ ==||== ____  |  | @@@|     xxxxx    |\n  |   ___/\\         |    O|          | |    |  ||  |    | |  |@___|     x        |\n  |       /_        |     |          | |____|  ||  |____| |             xxxxx    |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |$$$$|        x     |\n  |                 |     |          | |____|  ||  |____| |  |$$$$|       xx     |\n  |                 |     |          |  ____ ==||== ____  |  | $$ |      x x     |\n  |                 |    O|          | |    |  ||  |    | |  |_$__|        x     |\n  |                 |     |          | |____|  ||  |____| |              xxxxx   |\n  |_________________|_____|__________|____________________|______________________|\n  |                  _____           |  ____   ||   ____  |   ____               |\n  |                 |     |          | |    |  ||  |    | |  |    |      xxxxx   |\n  |                 |     |          | |____|  ||  |____| |  | @@ |      x   x   |\n  |                 |     |          |  ____ ==||== ____  |  |@@@@|      x   x   |\n  |                 |    O|          | |    |  ||  |    | |  |___@|      x   x   |\n  |                 |     |          | |____|  ||  |____| |              xxxxx   |\n  |_________________|_____|__________|____________________|______________________|\n\n> Entering Floor 2.\n\n\n"
+    sliceview_floor3: .asciiz "_################################################################################\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |    |     xxxxx    |\n   |                 |     |          | |____|  ||  |____| |  | && |     x        |\n   |                 |     |          |  ____ ==||== ____  |  |&&&&|     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |_&&&|         x    |\n   |                 |     |          | |____|  ||  |____| |             xxxxx    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |\\  /|     x   x    |\n   |                 |     |          | |____|  ||  |____| |  | /  |     x   x    |\n   |                 |     |          |  ____ ==||== ____  |  |/ \\ |     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |/__\\|         x    |\n   |                 |     |          | |____|  ||  |____| |                 x    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |\\####|          | |    |  ||  |    | |  | #  |     xxxxx    |\n   |      __O        | \\###|          | |____|  ||  |____| |  | ## |         x    |\n   |     / /\\_,      |  \\ #|          |  ____ ==||== ____  |  |### |       xxx    |\n   |    ___/\\        |  |##|          | |    |  ||  |    | |  |____|         x    |\n   |        /_       | o|##|          | |____|  ||  |____| |             xxxxx    |\n   |_________________|__|__|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  | @@ |     xxxxx    |\n   |                 |     |          | |____|  ||  |____| |  |@@  |         x    |\n   |                 |     |          |  ____ ==||== ____  |  | @@@|     xxxxx    |\n   |                 |    O|          | |    |  ||  |    | |  |@___|     x        |\n   |                 |     |          | |____|  ||  |____| |             xxxxx    |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |$$$$|        x     |\n   |                 |     |          | |____|  ||  |____| |  |$$$$|       xx     |\n   |                 |     |          |  ____ ==||== ____  |  | $$ |      x x     |\n   |                 |    O|          | |    |  ||  |    | |  |_$__|        x     |\n   |                 |     |          | |____|  ||  |____| |              xxxxx   |\n   |_________________|_____|__________|____________________|______________________|\n   |                  _____           |  ____   ||   ____  |   ____               |\n   |                 |     |          | |    |  ||  |    | |  |    |      xxxxx   |\n   |                 |     |          | |____|  ||  |____| |  | @@ |      x   x   |\n   |                 |     |          |  ____ ==||== ____  |  |@@@@|      x   x   |\n   |                 |    O|          | |    |  ||  |    | |  |___@|      x   x   |\n   |                 |     |          | |____|  ||  |____| |              xxxxx   |\n   |_________________|_____|__________|____________________|______________________|\n\n> Entering Floor 3.\n\n\n"
+    sliceview_floor5: .asciiz "_################################################################################\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |     |          | |    |  ||  |    | |  |    |     xxxxx    |\n |       __O       |     |          | |____|  ||  |____| |  | && |     x        |\n |      / /\\_,     |     |          |  ____ ==||== ____  |  |&&&&|     xxxxx    |\n |     ___/\\       |    O|          | |    |  ||  |    | |  |_&&&|         x    |\n |         /_      |     |          | |____|  ||  |____| |             xxxxx    |\n |_________________|_____|__________|____________________|______________________|\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |     |          | |    |  ||  |    | |  |\\  /|     x   x    |\n |                 |     |          | |____|  ||  |____| |  | /  |     x   x    |\n |                 |     |          |  ____ ==||== ____  |  |/ \\ |     xxxxx    |\n |                 |    O|          | |    |  ||  |    | |  |/__\\|         x    |\n |                 |     |          | |____|  ||  |____| |                 x    |\n |_________________|_____|__________|____________________|______________________|\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |\\####|          | |    |  ||  |    | |  | #  |     xxxxx    |\n |                 | \\###|          | |____|  ||  |____| |  | ## |         x    |\n |                 |  \\ #|          |  ____ ==||== ____  |  |### |       xxx    |\n |                 |  |##|          | |    |  ||  |    | |  |____|         x    |\n |                 | o|##|          | |____|  ||  |____| |             xxxxx    |\n |_________________|__|__|__________|____________________|______________________|\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |     |          | |    |  ||  |    | |  | @@ |     xxxxx    |\n |                 |     |          | |____|  ||  |____| |  |@@  |         x    |\n |                 |     |          |  ____ ==||== ____  |  | @@@|     xxxxx    |\n |                 |    O|          | |    |  ||  |    | |  |@___|     x        |\n |                 |     |          | |____|  ||  |____| |             xxxxx    |\n |_________________|_____|__________|____________________|______________________|\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |     |          | |    |  ||  |    | |  |$$$$|        x     |\n |                 |     |          | |____|  ||  |____| |  |$$$$|       xx     |\n |                 |     |          |  ____ ==||== ____  |  | $$ |      x x     |\n |                 |    O|          | |    |  ||  |    | |  |_$__|        x     |\n |                 |     |          | |____|  ||  |____| |              xxxxx   |\n |_________________|_____|__________|____________________|______________________|\n |                  _____           |  ____   ||   ____  |   ____               |\n |                 |     |          | |    |  ||  |    | |  |    |      xxxxx   |\n |                 |     |          | |____|  ||  |____| |  | @@ |      x   x   |\n |                 |     |          |  ____ ==||== ____  |  |@@@@|      x   x   |\n |                 |    O|          | |    |  ||  |    | |  |___@|      x   x   |\n |                 |     |          | |____|  ||  |____| |              xxxxx   |\n |_________________|_____|__________|____________________|______________________|\n\n> Entering Floor 4.\n\n\n"
+
+    floor0_dialog1: .asciiz "Player: Hey, good day!\n\n"
+    floor0_dialog2: .asciiz "Guard: Where is your MEF ID?\n\n" 
+    floor0_dialog3: .asciiz "Player: Oh, I guess I forgot it at home, may I pa-\n\n"
+    floor0_dialog4: .asciiz "Guard: No way I'm letting you pass without your ID.\n\n" 
+    floor0_dialog5: .asciiz "Player: Looks like I'll have to pass using my way!\n\n\n" 
+
+    floor0_guards_inbattle1: .asciiz "You shall not pass!\n\n"
+    floor0_guards_inbattle2: .asciiz "Argh-!\n\n"
+    floor0_guards_inbattle3: .asciiz "Ughh-!\n\n"
+    floor0_guards_takehit1: .asciiz "> You dealt "
+    floor0_guards_takehit2: .asciiz " damage.\n\n"
+
 
 
 .text
@@ -326,22 +353,133 @@ elevatorgame:
     
     j end
     
-
-startgame:
-    clearterminal
-    print(floor0_backstory_art)
-    print(floor0_backstory_text)
-
-
-
+invalid_input:
+    print(invalid_option) # test output
     j end
 
 checkpoint:
     print(startmenu_prompt) # test output
     j end
 
-invalid_input:
-    print(invalid_option) # test output
-    j end
+startgame:
+    clearterminal
+    print(floor0_backstory_art)
+    print(floor0_backstory_text)
+    fakebreakpoint
+
+    clearterminal
+    print(sliceview_floor0)
+    fakebreakpoint
+
+    j floor0_guardfight
+
+floor0_guardfight:
+    clearterminal
+    print(testfight_guards)
+
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    printstats()
+
+    print(floor0_dialog1)
+    sleep(3000)
+    print(floor0_dialog2)
+    sleep(3000)
+    print(floor0_dialog3)
+    sleep(3000)
+    print(floor0_dialog4)
+    sleep(3000)
+    print(floor0_dialog5)
+    fakebreakpoint
+
+    clearterminal
+    print(testfight_guards)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 16000 # Give 15 seconds to the user
+
+    floor0_guardfight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor0_guardfight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(testfight_guards)
+        printstats
+
+        randomness(89999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor0_guardfight_correct # branch to label 'equal' if $v0 == $t5
+        j floor0_guardfight_loop
+
+        floor0_guardfight_correct:
+            addi $t4, $t4, 1
+            j floor0_guardfight_loop
+
+    floor0_guardfight_turn_ends:
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier, 7 hits = KO for this fight)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor0_guardfight_enemydead # check if enemy is dead
+
+        randomness(20, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(testfight_guards)
+        printstats
+        
+        printrandom(floor0_guards_inbattle1, floor0_guards_inbattle2, floor0_guards_inbattle3)
+        print(floor0_guards_takehit1)
+        printregister($t4)
+        print(floor0_guards_takehit2)
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(testfight_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2)
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 16000 # Give 16 seconds to the user
+
+        j floor0_guardfight_loop
+
+    floor0_guardfight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(testfight_guards)
+        printstats
+        print(testfight_takehit)
+        printregister($t4)
+        print(testfight_takehit2)
+        print(enemyvanquished)
+        fakebreakpoint
+        j debugmenu
+
+
+
 
 end:
