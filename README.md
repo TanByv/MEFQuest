@@ -5,6 +5,7 @@ Entirely written from scratch in MIPS Assembly.
 
 
 
+
 # Usage Instructions
 Windows:
 1) Make sure you have screen zoom scale set to 100%
@@ -21,6 +22,7 @@ Windows:
 ![alt text](https://files.catbox.moe/3d35dp.PNG)
 ![alt text](https://files.catbox.moe/diz97f.PNG)
 ![alt text](https://files.catbox.moe/q6s2ix.PNG)
+
 
 
 # Contributors & Special Thanks
