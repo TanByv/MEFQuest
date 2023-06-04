@@ -123,7 +123,7 @@
     buffer: .space 4
     invalid_option: .asciiz "Please enter a valid option"
     breakpoint_prompt: .asciiz "Press enter to continue"
-    fight_starting: .asciiz "Fight is starting in 5 seconds, get ready!\n"
+    fight_starting: .asciiz "Fight is starting in 5 seconds, get ready!\n\n"
     answer_prompt: .asciiz "> Enter answer: "
 
     stats_spacing: .asciiz "                    "
@@ -169,9 +169,9 @@
     floor0_guards_dialog4: .asciiz "Guard: No way I'm letting you pass without your ID.\n\n" 
     floor0_guards_dialog5: .asciiz "Player: Looks like I'll have to pass using my way!\n\n\n" 
 
-    floor0_guards_inbattle1: .asciiz "You shall not pass!\n\n"
-    floor0_guards_inbattle2: .asciiz "Argh-!\n\n"
-    floor0_guards_inbattle3: .asciiz "Ughh-!\n\n"
+    floor0_guards_inbattle1: .asciiz "Guard: Oof! You shall not pass!\n\n"
+    floor0_guards_inbattle2: .asciiz "Guard: Argh-!\n\n"
+    floor0_guards_inbattle3: .asciiz "Guard: Ughh-!\n\n"
     floor0_guards_takehit1: .asciiz "> You dealt "
     floor0_guards_takehit2: .asciiz " damage.\n\n"
 
@@ -182,9 +182,9 @@
     floor0_kantin_dialog4: .asciiz "Toaster Guy: Gladly, but lets watch this Yetmez Gencler video first!\n\n"
     floor0_kantin_dialog5: .asciiz "Player: Oh hell no!\n\n\n"
 
-    floor0_kantin_inbattle1: .asciiz "Oof! I will take all of your money-\n\n"
-    floor0_kantin_inbattle2: .asciiz "Argh-! You won't able to resist against my pizza toasts.\n\n"
-    floor0_kantin_inbattle3: .asciiz "Ughh-! Why won't you eat the toast?\n\n"
+    floor0_kantin_inbattle1: .asciiz "Toaster Guy: Oof! I will take all of your money-\n\n"
+    floor0_kantin_inbattle2: .asciiz "Toaster Guy: Argh-! You won't able to resist against my pizza toasts.\n\n"
+    floor0_kantin_inbattle3: .asciiz "Toaster Guy: Ughh-! Why won't you eat the toast?\n\n"
     floor0_kantin_hitplayer_dialog: .asciiz "Toaster Guy: Take this!\n\n> You took "
 
     floor0_kantin_afterfight1: .asciiz "Toaster Guy: Wait where am I? I was preparing sandwiches...\n\n"
@@ -193,6 +193,30 @@
     floor0_kantin_afterfight4: .asciiz "Player: I don't know yet, but I will figure it out.\n\n"
     floor0_kantin_afterfight5: .asciiz "Toaster Guy: Good luck with that, take this kumru with you. A full stomach is a happy stomach!\n\n\n"
 
+    floor1_student_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n   /////////////\\\\\\\\      ___________        ___________          ***           $$\n  (((((((((((((( \\\\\\\\    |           |      |           |       *******       $$$$$\n  ))) ~~      ~~  (((    |  .......  |      |  .......  |      *********      $$$$$\n  ((( (*)     (*) )))    |   .....   |      |   .....   |   /\\* ### ### */\\    $$\n  )))     <       (((    |___________|      |___________|   |    @ / @    |    $$\n  ((( '\\______/`  )))   o                                o  \\/\\    ^    /\\/    $$\n  )))\\___________/(((  o                                   o   \\  ===  /       $$\n         _) (_       o                                       o  \\_____/      $$$$\n      xxxxxxxxx                                                  _|_|_     $$$\n   xxxxxxxxxxxxxxxx                                $$$$$$$$$$$$$$$$$$$$$*$$$\n xxx xxxxxxxxxxx  xxx                               $$$$$$$$$$$$$$$$$$$$$$\nxxx  xxxxxxxxxxx xxx                                           $$$$$$$$$$$\n  xxxxxxxxxxxxxxxx                                             $$$$$$$$$$$\n    xxxxxxxxxxxxx                                              $$$$$$$$$$$\n   xxxxxxxxxxxxxxx                                             $$$$$$$$$$$\n  xxxxxxxxxxxxxxxxx                                            $$$$$$$$$$$\n xxxxxxxxxxxxxxxxxxx                                           $$$$$$$$$$$\n\n\n\n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-\n\n"
+    floor1_student_dialog1: .asciiz "Player: (There are students blocking the way upstairs.)\n\n"
+    floor1_student_dialog2: .asciiz "Student 1: Where is the C Block by the way?\n\n"
+    floor1_student_dialog3: .asciiz "Student 2: I don't really know, I was going to ask you where is dining hall.\n\n"
+    floor1_student_dialog4: .asciiz "Player: Hey, are you guys alright?\n\n"
+    floor1_student_dialog5: .asciiz "Student 1: What is it to you? Get lost!\n\n"
+    floor1_student_dialog6: .asciiz "Player: Take it easy man, I just wanted to ask where Student Affairs office is.\n\n"
+    floor1_student_dialog7: .asciiz "Student 2: How about you watch this Yetmez Gencler video with us? *Points their phone at you*\n\n"
+    floor1_student_dialog8: .asciiz "Player: We wont be needing that. I guess I have to take you all down!\n\n\n"
+
+    floor1_student_inbattle1: .asciiz "Students: Oof! Cut that out man!\n\n"
+    floor1_student_inbattle2: .asciiz "Students: Argh-! We wont let you pass!\n\n"
+    floor1_student_inbattle3: .asciiz "Students: Ughh-! Who asked for your opinion?\n\n"
+    floor1_student_hitplayer_dialog: .asciiz "Students: Take this!\n\n> You took "
+
+    floor1_student_afterfight1: .asciiz "Student 1: Where am I?\n\n"
+    floor1_student_afterfight2: .asciiz "Student 2: The last thing I remember is we were watching Yetmez Gencler's video...\n\n"
+    floor1_student_afterfight3: .asciiz "Player: Yeah, you and all the other students were getting manipulated by Professor Ercan Korkut.\n\n"
+    floor1_student_afterfight4: .asciiz "Student 1: No way...\n\n"
+    floor1_student_afterfight5: .asciiz "Player: I'm surprised that you don't remember a thing.\n\n"
+    floor1_student_afterfight6: .asciiz "Student 2: I told you man, last thing I remember is we were watching Yetmez Gencler's course video.\n\n"
+    floor1_student_afterfight7: .asciiz "Student 1: Now that you mention it.. Where are all the other students?\n\n"
+    floor1_student_afterfight8: .asciiz "Student 2: Wait wait! We are late for Calculus Class!\n\n\n"
+    
 
 .text
 main:
@@ -491,9 +515,10 @@ floor0_guardfight:
         clearterminal
         print(testfight_guards)
         printstats
-        print(testfight_takehit)
+        printrandom(floor0_guards_inbattle1, floor0_guards_inbattle2, floor0_guards_inbattle3)
+        print(floor0_guards_takehit1)
         printregister($t4)
-        print(testfight_takehit2)
+        print(floor0_guards_takehit2)
         print(enemyvanquished)
         fakebreakpoint
         j floor0_kantinfight
@@ -601,9 +626,10 @@ floor0_kantinfight:
         clearterminal
         print(floor0_kantin_ascii)
         printstats
-        print(testfight_takehit)
+        printrandom(floor0_kantin_inbattle1, floor0_kantin_inbattle2, floor0_kantin_inbattle3)
+        print(floor0_guards_takehit1) # leave
         printregister($t4)
-        print(testfight_takehit2)
+        print(floor0_guards_takehit2) # leave
         print(enemyvanquished)
         fakebreakpoint
 
@@ -622,14 +648,148 @@ floor0_kantinfight:
         sleep(3000)
         fakebreakpoint
 
-        
-
+        clearterminal
+        print(sliceview_floor1)
+        fakebreakpoint
         j floor1_studentfight
 
 
 
 floor1_studentfight:
+    clearterminal
+    print(floor1_student_ascii)
 
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    li $t5, 0
+    printstats()
 
+    print(floor1_student_dialog1)
+    sleep(3000)
+    print(floor1_student_dialog2)
+    sleep(3000)
+    print(floor1_student_dialog3)
+    sleep(3000)
+    print(floor1_student_dialog4)
+    sleep(3000)
+    print(floor1_student_dialog5)
+    sleep(3000)
+    print(floor1_student_dialog6)
+    sleep(3000)
+    print(floor1_student_dialog7)
+    sleep(3000)
+    print(floor1_student_dialog8)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor1_student_ascii)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+    floor1_studentfight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor1_studentfight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+
+        randomness(89999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor1_studentfight_correct # branch to label 'equal' if $v0 == $t5
+        j floor1_studentfight_loop
+
+        floor1_studentfight_correct:
+            addi $t4, $t4, 1
+            j floor1_studentfight_loop
+
+    floor1_studentfight_turn_ends:
+        li $t0, 10 # load immediate value 15 into $t0 (damage multiplier)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor1_studentfight_enemydead # check if enemy is dead
+
+        randomness(25, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(floor0_kantin_ascii)
+        printstats
+        
+        printrandom(floor1_student_inbattle1, floor1_student_inbattle2, floor1_student_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(floor1_student_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2) # leave
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+        j floor1_studentfight_loop
+
+    floor1_studentfight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+        printrandom(floor1_student_inbattle1, floor1_student_inbattle2, floor1_student_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        print(enemyvanquished)
+        fakebreakpoint
+
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+        print(floor1_student_afterfight1)
+        sleep(3000)
+        print(floor1_student_afterfight2)
+        sleep(3000)
+        print(floor1_student_afterfight3)
+        sleep(3000)
+        print(floor1_student_afterfight4)
+        sleep(3000)
+        print(floor1_student_afterfight5)
+        sleep(3000)
+        print(floor1_student_afterfight6)
+        sleep(3000)
+        print(floor1_student_afterfight7)
+        sleep(3000)
+        print(floor1_student_afterfight8)
+        sleep(3000)
+        fakebreakpoint
+
+        j debugmenu
 
 end:

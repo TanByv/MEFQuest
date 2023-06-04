@@ -89,7 +89,7 @@ Student 2: I don't really know, I was going to ask you where is dining hall.
 
 Player: Hey, are you guys alright?
 
-Student 1: What is it to you, get lost!
+Student 1: What is it to you? Get lost!
 
 Player: Take it easy man, I just wanted to ask where Student Affairs office is.
 
@@ -103,7 +103,7 @@ Player: I guess I have to take you all down!
 
 Student 1: Where am I?
 
-Student 2: The last thing I remember is we were watching "Yetmez Gencler"'s video...
+Student 2: The last thing I remember is we were watching 'Yetmez Gencler's video...
 
 Player: Yeah, you and all the other students were getting manipulated by Professor Ercan Korkut.
 
@@ -111,7 +111,7 @@ Student 1: No way...
 
 Player: I'm surprised that you don't remember a thing.
 
-Student 2: I told you man, last thing I remember is we were watching "Yetmez Gencler"'s course video.
+Student 2: I told you man, last thing I remember is we were watching Yetmez Gencler's course video.
 
 Student 1: Now that you mention it.. Where are all the other students?
 
