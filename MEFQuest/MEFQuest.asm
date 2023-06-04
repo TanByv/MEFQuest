@@ -256,7 +256,7 @@
 	office_beforefight_convo3: .asciiz "Registrar: Haven't you attended Yetmez Gençler? You won't be able graduate.\n\n"
 	office_beforefight_convo4: .asciiz "Player: Cut the crap, where is Professor Korkut?\n\n"
 	office_beforefight_convo5: .asciiz "Registrar: We can't inform you about that topic, you may mail us later.\n\n"
-	office_beforefight_convo6: .asciiz "Player: How about we solve this problem right now?\n\n"
+	office_beforefight_convo6: .asciiz "Player: How about we solve this problem right now?\n\n\n"
 
 	office_infight1: .asciiz "Ouch-! You may mail us.\n\n"
 	office_infight2: .asciiz "Ughh-! We can't help you right now.\n\n"
@@ -269,8 +269,8 @@
 	office_afterfight_convo4: .asciiz "Registrar: His ambition... He believed that MEF University was the most successful one at graduating competent students. He wanted all others to respect that belief...\n\n"
 	office_afterfight_convo5: .asciiz "Registrar: He brainwashed everyone to make them believe it as well. So he get other to join MEF in the future without any hangups.\n\n"
 	office_afterfight_convo6: .asciiz "Player: Brain washing people is not a solution to this! How can I end this madness?\n\n"
-	office_afterfight_convo7: .asciiz "Registrar: He is on 5th floor. Defeat him... He is still giving Yetmez Gençler courses.\n\n\n"
-	office_afterfight_convo8: .asciiz "***Player starts walking off to take stairs.***\n\n"
+	office_afterfight_convo7: .asciiz "Registrar: He is on 5th floor. Defeat him... He is still giving Yetmez Gençler courses.\n\n"
+	office_afterfight_convo8: .asciiz "***Player starts walking off to take stairs.***\n\n\n"
 	office_afterfight_convo9: .asciiz "Registrar: Wait! You can't defeat him, you are still weak!\n\n"
 	office_afterfight_convo10: .asciiz "Player: Do you know something?\n\n"
 	office_afterfight_convo11: .asciiz "Registrar: Aye, according to the ancient legends, there is only one person who knows how to defeat him.\n\n"
@@ -294,30 +294,16 @@
 	floor3_library_inbattle3: .asciiz "Ughh-! Do you know about how to make citations?\n\n"
 	floor3_library_hitplayer_dialog: .asciiz "Librarian: Take this!\n\n> You took "
 
-	floor3_library_afterbattle1: .asciiz "Librarian: +Ugh... I feel dizzy, what happened to me?!\n\n"
+	floor3_library_afterbattle1: .asciiz "Librarian: Ugh... I feel dizzy, what happened to me?!\n\n"
 	floor3_library_afterbattle2: .asciiz "Player: Professor Korkut is manipulating everyone in the school.\n\n"
 	floor3_library_afterbattle3: .asciiz "Player: I need some help now. I should gather some information to stop him. Will you help me.\n\n"
-	floor3_library_afterbattle4: .asciiz "Librarian:You talk about the forbiedden part of the library I guess. It has 3 different corridors. THe information you need should be there.\n\n"
+	floor3_library_afterbattle4: .asciiz "Librarian:You talk about the forbidden part of the library I guess. It has 3 different corridors. The information you need should be there.\n\n\n"
 
 	floor3_library_hallwat_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n        \\                                        /\n          \\                                     /\n           \\                                   /\n           ]                                  [    ,'|\n           ]                                  [   /  |\n           ]____                          ____[ ,'   |\n           ]   ]\\                        /[   [ |:   |\n           ]   ] \\                      / [   [ |:   |\n           ]   ]  ]                    [  [   | | :  |\n           ]   ]  ]____             ___[  [   [ |:   |\n           ]   ]  ]   ]\\     _    /[   [  [   [ |:   |\n           ]   ]  ]   ]     (#)    [   [  [   [ :===='\n           ]   ]  ]___]    .nHn.   [___[  [   [\n           ]   ]  ]       HHHHH.       [  [   [\n           ]   ] /        `HH('N        \\ [   [\n           ]___]/          HHH  '        \\[___[\n           ]               NNN                [\n           ]               N/'                [\n           ]               N H                [\n          /                N                   \\\n         /                 q,                   \\\n        /                                        \\\n			\n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+				\n\n"
 	floor3_library_book_ascii: .asciiz "      ______ ______\n    _/      Y      \_\n   // ~~ ~~ | ~~ ~  \\\n  // ~ ~ ~~ | ~~~ ~~ \\\     \n //________.|.________\\\    \n`----------`-'----------'\n\n"
 
-	floo3_library_book1_name: .asciiz "1st Book; The Secret of OrtaylÄ±\n\n"
-	floor3_book1_2: .asciiz ".-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. "
-	floor3_book1_3: .asciiz "/ -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . "
-	floor3_book1_4: .asciiz "/ - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . "
-	floor3_book1_5: .asciiz "/ ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. "
-	floor3_book1_6: .asciiz "/ -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. "
-	floor3_book1_7: .asciiz "/ .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . "
-	floor3_book1_8: .asciiz "/ .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... "
-	floor3_book1_9: .asciiz "/ .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... "
-	floor3_book1_10: .asciiz "/ .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- "
-	floor3_book1_11: .asciiz "/ ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- "
-	floor3_book1_12: .asciiz "/ - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - "
-	floor3_book1_13: .asciiz "/ -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. "
-	floor3_book1_14: .asciiz "/ .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. "
-	floor3_book1_15: .asciiz  "/ ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- "
-	floor3_book1_16: .asciiz "/ ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--"
+	floo3_library_book1_name: .asciiz "1st Book; The Secret of Ortayli\n\n"
+	floor3_book1: .asciiz ".-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. \n/ -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . \n/ - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . \n/ ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. \n/ -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. \n/ .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . \n/ .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... \n/ .. -. -.. ..- ... - .-. .. .- .-.. .. --.. . -.. --..-- / - .... . / -. ..- -- -... . .-. / --- ..-. / .-- --- .-. -.- .. -. --. \n/ .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... \n/ .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- \n/ ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- \n/ - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - \n/ -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. \n/ .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. \n/ ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- \n/ ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--\n\n"
 
 	floor3_dialog_after_book1: .asciiz "Player: Ehh...\n\n"
 
@@ -350,7 +336,7 @@
     floor3_minigame_prompt2: .asciiz " and press enter as quickly as you can!\n\n"
 
     floor3_after_hallway: .asciiz "Player: (That was close...)\n\n"
-    floor3_before_toasterguy: .asciiz "Another encounter with the toaster guy.\n\n\n"
+    floor3_before_toasterguy: .asciiz "Player: Looks like this is going to another encounter with the toaster guy.\n\n\n"
 
     floor3_toasterguy_dialog1: .asciiz "Toaster Guy: How is going? Have you found a way?\n\n"
     floor3_toasterguy_dialog2: .asciiz "Player: Aye, I got some intel, I should find some kind of ancient information inside the Library to defeat him.\n\n"
@@ -382,7 +368,7 @@ debugmenu:
 
     # check if user entered 2
     li $t1, 2
-    beq $t0, $t1, floor3_slither_minigame
+    beq $t0, $t1, floor2_officefight
    
     # check if user entered 3 
     li $t1, 3
@@ -1338,7 +1324,150 @@ floor2_officefight:
         clearterminal
         print(sliceview_floor3)
         fakebreakpoint
-        j floor3_librarianfight
+        j floor3_slither_minigame
+
+floor3_slither_minigame:
+    clearterminal
+    print(floor3_minigame_ascii1)
+    print(floor3_minigame_dialog1)
+    sleep(3000)
+    print(floor3_minigame_dialog2)
+    sleep(3000)
+    print(floor3_minigame_instructions)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor3_minigame_ascii1)
+
+    randomness(9, 0)
+    print(floor3_minigame_prompt1)
+    printregister($t5)
+    print(floor3_minigame_prompt2)
+    print(answer_prompt)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+    # read integer from user
+    li $v0, 5
+    syscall
+    move $t0, $v0
+
+    li $v0, 30
+    syscall
+    move $t8, $a0 # Store time in $t8
+    bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+    # check if user entered correct
+    move $t1, $t5
+    beq $t0, $t1, minigame_correct1
+
+    # WRONG
+    j floor3_minigame_gameover_incorrect
+
+    minigame_correct1:
+        clearterminal
+        print(floor3_minigame_ascii2)
+
+        randomness(9, 0)
+        print(floor3_minigame_prompt1)
+        printregister($t5)
+        print(floor3_minigame_prompt2)
+        print(answer_prompt)
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+        # read integer from user
+        li $v0, 5
+        syscall
+        move $t0, $v0
+
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+        # check if user entered correct
+        move $t1, $t5
+        beq $t0, $t1, minigame_correct2
+
+        # WRONG
+        j floor3_minigame_gameover_incorrect
+
+        minigame_correct2:
+            clearterminal
+            print(floor3_minigame_ascii3)
+
+            randomness(9, 0)
+            print(floor3_minigame_prompt1)
+            printregister($t5)
+            print(floor3_minigame_prompt2)
+            print(answer_prompt)
+
+            # Get current time before user input
+            li $v0, 30
+            syscall
+            move $t9, $a0 # Store starting time in $t9
+            addi $t9, $t9, 3000 # Give 3 seconds to the user
+
+            # read integer from user
+            li $v0, 5
+            syscall
+            move $t0, $v0
+
+            li $v0, 30
+            syscall
+            move $t8, $a0 # Store time in $t8
+            bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
+
+            # check if user entered correct
+            move $t1, $t5
+            beq $t0, $t1, minigame_correct3
+
+            # WRONG
+            j floor3_minigame_gameover_incorrect
+
+            minigame_correct3:
+                clearterminal
+                print(floor3_minigame_ascii4)
+                print(floor3_after_hallway)
+                print(floor3_before_toasterguy)
+                fakebreakpoint
+
+                clearterminal
+                print(floor0_kantin_ascii)
+                print(floor3_toasterguy_dialog1)
+                sleep(3000)
+                print(floor3_toasterguy_dialog2)
+                sleep(3000)
+                print(floor3_toasterguy_dialog3)
+                sleep(3000)
+                print(floor3_toasterguy_dialog4)
+                sleep(3000)
+
+                j floor3_librarianfight #librarian fight
+
+
+floor3_minigame_gameover_tooslow:
+    clearterminal
+    print(floor3_minigame_gameoverslow)
+    fakebreakpoint
+    j main
+
+floor3_minigame_gameover_incorrect:
+    clearterminal
+    print(floor3_minigame_gameoverwrong)
+    fakebreakpoint
+    j main
+
 
 floor3_librarianfight:
 	clearterminal
@@ -1464,139 +1593,4 @@ floor3_librarianfight_loop:
         fakebreakpoint
 
         j debugmenu
-
-
-
-floor3_slither_minigame:
-    clearterminal
-    print(floor3_minigame_ascii1)
-    print(floor3_minigame_dialog1)
-    sleep(3000)
-    print(floor3_minigame_dialog2)
-    sleep(3000)
-    print(floor3_minigame_instructions)
-    sleep(3000)
-    fakebreakpoint
-
-    clearterminal
-    print(floor3_minigame_ascii1)
-
-    randomness(9, 0)
-    print(floor3_minigame_prompt1)
-    printregister($t5)
-    print(floor3_minigame_prompt2)
-    print(answer_prompt)
-
-    # Get current time before user input
-    li $v0, 30
-    syscall
-    move $t9, $a0 # Store starting time in $t9
-    addi $t9, $t9, 3000 # Give 3 seconds to the user
-
-    # read integer from user
-    li $v0, 5
-    syscall
-    move $t0, $v0
-
-    li $v0, 30
-    syscall
-    move $t8, $a0 # Store time in $t8
-    bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
-
-    # check if user entered correct
-    move $t1, $t5
-    beq $t0, $t1, minigame_correct1
-
-    # WRONG
-    j floor3_minigame_gameover_incorrect
-
-    minigame_correct1:
-        clearterminal
-        print(floor3_minigame_ascii2)
-
-        randomness(9, 0)
-        print(floor3_minigame_prompt1)
-        printregister($t5)
-        print(floor3_minigame_prompt2)
-        print(answer_prompt)
-
-        # Get current time before user input
-        li $v0, 30
-        syscall
-        move $t9, $a0 # Store starting time in $t9
-        addi $t9, $t9, 3000 # Give 3 seconds to the user
-
-        # read integer from user
-        li $v0, 5
-        syscall
-        move $t0, $v0
-
-        li $v0, 30
-        syscall
-        move $t8, $a0 # Store time in $t8
-        bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
-
-        # check if user entered correct
-        move $t1, $t5
-        beq $t0, $t1, minigame_correct2
-
-        # WRONG
-        j floor3_minigame_gameover_incorrect
-
-        minigame_correct2:
-            clearterminal
-            print(floor3_minigame_ascii3)
-
-            randomness(9, 0)
-            print(floor3_minigame_prompt1)
-            printregister($t5)
-            print(floor3_minigame_prompt2)
-            print(answer_prompt)
-
-            # Get current time before user input
-            li $v0, 30
-            syscall
-            move $t9, $a0 # Store starting time in $t9
-            addi $t9, $t9, 3000 # Give 3 seconds to the user
-
-            # read integer from user
-            li $v0, 5
-            syscall
-            move $t0, $v0
-
-            li $v0, 30
-            syscall
-            move $t8, $a0 # Store time in $t8
-            bgt $t8, $t9, floor3_minigame_gameover_tooslow  # too slow
-
-            # check if user entered correct
-            move $t1, $t5
-            beq $t0, $t1, minigame_correct3
-
-            # WRONG
-            j floor3_minigame_gameover_incorrect
-
-            minigame_correct3:
-                clearterminal
-                print(floor3_minigame_ascii4)
-                print(floor3_after_hallway)
-                print(floor3_before_toasterguy)
-                fakebreakpoint
-
-                j debugmenu #librarian fight
-
-
-floor3_minigame_gameover_tooslow:
-    clearterminal
-    print(floor3_minigame_gameoverslow)
-    fakebreakpoint
-    j main
-
-floor3_minigame_gameover_incorrect:
-    clearterminal
-    print(floor3_minigame_gameoverwrong)
-    fakebreakpoint
-    j main
-
-
 end:
