@@ -528,8 +528,8 @@ floor0_guardfight:
         print(testfight_takehit2)
         print(enemyvanquished)
         fakebreakpoint
-        j floor0_kantinfight
 
+        j floor0_kantinfight
 
 
 floor0_kantinfight:
@@ -653,8 +653,6 @@ floor0_kantinfight:
         print(floor0_kantin_afterfight5)
         sleep(3000)
         fakebreakpoint
-
-        
 
         j floor1_ilkayfight
 
@@ -905,9 +903,6 @@ floor2_studentfight_loop:
         sleep(3000)
         fakebreakpoint
 
-        
-
         j debugmenu
-
 
 end:
