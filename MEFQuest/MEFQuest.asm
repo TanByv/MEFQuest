@@ -1665,7 +1665,7 @@ floor3_librarianfight_loop:
         sleep(3000)
         fakebreakpoint
 
-        j debugmenu
+        j librarybook
         
 librarybook:
 
