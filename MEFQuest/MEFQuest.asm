@@ -654,6 +654,147 @@ floor0_kantinfight:
         sleep(3000)
         fakebreakpoint
 
+        clearterminal
+        print(sliceview_floor1)
+        fakebreakpoint
+        j floor1_studentfight
+
+
+floor1_studentfight:
+    clearterminal
+    print(floor1_student_ascii)
+
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    li $t5, 0
+    printstats()
+
+    print(floor1_student_dialog1)
+    sleep(3000)
+    print(floor1_student_dialog2)
+    sleep(3000)
+    print(floor1_student_dialog3)
+    sleep(3000)
+    print(floor1_student_dialog4)
+    sleep(3000)
+    print(floor1_student_dialog5)
+    sleep(3000)
+    print(floor1_student_dialog6)
+    sleep(3000)
+    print(floor1_student_dialog7)
+    sleep(3000)
+    print(floor1_student_dialog8)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor1_student_ascii)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+    floor1_studentfight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor1_studentfight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+
+        randomness(89999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor1_studentfight_correct # branch to label 'equal' if $v0 == $t5
+        j floor1_studentfight_loop
+
+        floor1_studentfight_correct:
+            addi $t4, $t4, 1
+            j floor1_studentfight_loop
+
+    floor1_studentfight_turn_ends:
+        li $t0, 10 # load immediate value 15 into $t0 (damage multiplier)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor1_studentfight_enemydead # check if enemy is dead
+
+        randomness(25, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(floor0_kantin_ascii)
+        printstats
+        
+        printrandom(floor1_student_inbattle1, floor1_student_inbattle2, floor1_student_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(floor1_student_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2) # leave
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+        j floor1_studentfight_loop
+
+    floor1_studentfight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+        printrandom(floor1_student_inbattle1, floor1_student_inbattle2, floor1_student_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        print(enemyvanquished)
+        fakebreakpoint
+
+        clearterminal
+        print(floor1_student_ascii)
+        printstats
+        print(floor1_student_afterfight1)
+        sleep(3000)
+        print(floor1_student_afterfight2)
+        sleep(3000)
+        print(floor1_student_afterfight3)
+        sleep(3000)
+        print(floor1_student_afterfight4)
+        sleep(3000)
+        print(floor1_student_afterfight5)
+        sleep(3000)
+        print(floor1_student_afterfight6)
+        sleep(3000)
+        print(floor1_student_afterfight7)
+        sleep(3000)
+        print(floor1_student_afterfight8)
+        sleep(3000)
+        fakebreakpoint
+
         j floor1_ilkayfight
 
 
@@ -687,7 +828,7 @@ floor1_ilkayfight:
     move $t9, $a0 # Store starting time in $t9
     addi $t9, $t9, 15000 # Give 15 seconds to the user
 
-floor1_ilkayfight_loop:
+    floor1_ilkayfight_loop:
         li $v0, 30
         syscall
         move $t8, $a0 # Store time in $t8
@@ -713,7 +854,7 @@ floor1_ilkayfight_loop:
             addi $t4, $t4, 1
             j floor1_ilkayfight_loop
    
-     floor1_ilkayfight_turn_ends:
+    floor1_ilkayfight_turn_ends:
         li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
@@ -779,9 +920,6 @@ floor1_ilkayfight_loop:
 	clearterminal
         print(sliceview_floor2)
         fakebreakpoint
-      
-        
-
         j floor2_studentfight
 
 floor2_studentfight:
@@ -842,7 +980,7 @@ floor2_studentfight_loop:
             addi $t4, $t4, 1
             j floor2_studentfight_loop
    
-     floor2_studentfight_turn_ends:
+    floor2_studentfight_turn_ends:
         li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
