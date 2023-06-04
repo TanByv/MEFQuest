@@ -249,6 +249,95 @@
     floor2_student_afterfight3: .asciiz "Student: No my head is spinning... Leave me alone!\n\n"
     floor2_student_afterfight4: .asciiz "Player: (It's really exhausting to try talk with those guys... I might find something useful in the Registrar Office.)\n\n\n"
 
+    office_art: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+					\n\n\n            _,,,_                     \\|    ]|   .-'\n          .'     `'.                   L.__  .--'(\n         /     ____ \\                ,---|_      \\---------,                  __/)                   __/)\n        |    .'_  _\\/              \\/ .--._|=-    |_      /|               .-(__(=:               .-(__(=:\n        /    ) a  a|         .----.`\\/ .-'          '.   / |               |    \\)                |    \\)\n       /    (    > |        /|  ;-:'--.|             |-./  |   ejm97 (\\__  |          ejm97 (\\__  |\n      (      ) ._  /        || /_ ]| )/`-.-----------')/)  |        :=)__)-|  __/)         :=)__)-|  __/)\n      )    _/-.__.'`\\       ||\\//`]|`/,=::|.'`````````/ (  |         (/    |-(__(=:         (/    |-(__(=:\n     (  .-'`-.   \\__ )      ||/ `-]|` `=::|          /   ) |       ______  |  _ \\)        ______  |  _ \\)\n      `/      `-./  `.      ||    ]|    ::|         /   (  |      /      \\ | / \\         /      \\ | / \\\n     _ |    \\      \\  \\     \\|----]|---.-'--------'|     ) |           ___\\|/___\\             ___\\|/___\\\n    / \\|     \\   \\  \\  \\    |L.__  .--'(           |    /  |          [         ]\\           [         ]\\\n   |   |\\     `. /  /   \\  ,---|_      \\---------, |   (   |           \\       /  \\           \\       /  \\\n   |   `\\'.     '. /`\\   \\/ .--._|=-    |_      /| |    ) ,|            \\     /                \\     /\n   |     \\ '.     '._ './`\\/|.-'          '.   / | |   ( /||             \\___/                  \\___/\n   |     |   `'.     `;-:-;`)|             |-./  | |   )/ ``\n   |    /_      `'--./_  ` )/'-------------')/)  | |  (/\n   \\   | `````----``\\//````/,===..'`````````/ (  | |  /)\n    |  |            / `---` `==='          /   ) | | /\n    /  \\           /        | .-----------/---(--|.||\n   |    '------.  |'--------------------'|     ) |```\n    \\           `-|                      |    /  |\n     `--...,______|                      |   (   |\n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+					\n\n"
+    office_artbig: .asciiz "                      ____________                                         ===========|=============\n                     |           |                                         |==========||============\n                     |        // |                                         ||         ||          ||\n                     |    @@ //  |                                         ||         ||          ||\n                     |  @@@@@    |                                         ||         ||          ||\n                     |  //@@@@   |  .----.                                 ||     ----|---        ||\n                     |/// @@@@   | /|     '--.                             ||     ----|--         ||\n                     |  xxxx x   | ||    ]|   `-.                          ||         ||          ||\n                     |xxxxxxxxxx | ||    ]|    ::|                         ||         ||          ||\n                     |xxxxxxxxxxx| ||    ]|    ::|                         |===========|==========||\n                                   ||    ]|    ::|                         ||==========|===========|\n         _,,,_                     \\|    ]|   .-'\n       .'     `'.                   L.__  .--'(\n      /     ____ \\                ,---|_      \\---------,                  __/)                   __/)\n     |    .'_  _\\/              \\/ .--._|=-    |_      /|               .-(__(=:               .-(__(=:\n     /    ) a  a|         .----.`\\/ .-'          '.   / |               |    \\)                |    \\)\n    /    (    > |        /|  ;-:'--.|             |-./  |   ejm97 (\\__  |          ejm97 (\\__  |\n   (      ) ._  /        || /_ ]| )/`-.-----------')/)  |        :=)__)-|  __/)         :=)__)-|  __/)\n   )    _/-.__.'`\\       ||\\//`]|`/,=::|.'`````````/ (  |         (/    |-(__(=:         (/    |-(__(=:\n  (  .-'`-.   \\__ )      ||/ `-]|` `=::|          /   ) |       ______  |  _ \\)        ______  |  _ \\)\n   `/      `-./  `.      ||    ]|    ::|         /   (  |      /      \\ | / \\         /      \\ | / \\\n  _ |    \\      \\  \\     \\|----]|---.-'--------'|     ) |           ___\\|/___\\             ___\\|/___\\\n / \\|     \\   \\  \\  \\    |L.__  .--'(           |    /  |          [         ]\\           [         ]\\\n|   |\\     `. /  /   \\  ,---|_      \\---------, |   (   |           \\       /  \\           \\       /  \\\n|   `\\'.     '. /`\\   \\/ .--._|=-    |_      /| |    ) ,|            \\     /                \\     /\n|     \\ '.     '._ './`\\/|.-'          '.   / | |   ( /||             \\___/                  \\___/\n|     |   `'.     `;-:-;`)|             |-./  | |   )/ `'\n|    /_      `'--./_  ` )/'-------------')/)  | |  (/\n\\   | `''''----'`\\//`''`/,===..'`````````/ (  | |  /)\n |  |            / `---` `==='          /   ) | | /\n /  \\           /        | .-----------/---(--|.||\n|    '------.  |'--------------------'|     ) |`'`\n \\           `-|                      |    /  |\n  `--...,______|                      |   (   |\n         | |   |                      |    ) ,|\n         | |   |                      |   ( /||\n         | |   |                      |   )/ `'\n        /   \\  |                      |  (/\n  jgs .' /I\\ '.|                      |  /)\n   .-'_.'/ \\'. |                      | /\n   ```  `'''` `| .-------------------.||\n               `'`                   `'`\n\n"
+    office_beforefight_convo1: .asciiz "Student: Um, hello. Is this the Registrar's Office?\n\n"
+	office_beforefight_convo2: .asciiz "Registrar: Not to you.. You look different!\n\n"
+	office_beforefight_convo3: .asciiz "Registrar: Haven't you attended Yetmez Gençler? You won't be able graduate.\n\n"
+	office_beforefight_convo4: .asciiz "Player: Cut the crap, where is Professor Korkut?\n\n"
+	office_beforefight_convo5: .asciiz "Registrar: We can't inform you about that topic, you may mail us later.\n\n"
+	office_beforefight_convo6: .asciiz "Player: How about we solve this problem right now?\n\n"
+
+	office_infight1: .asciiz "Ouch-! You may mail us.\n\n"
+	office_infight2: .asciiz "Ughh-! We can't help you right now.\n\n"
+	office_infight3: .asciiz "Argh-! You need to ask it to your advisor professor.\n\n"
+	floor2_office_hitplayer_dialog: .asciiz "Office: Take this!\n\n> You took "
+
+	office_afterfight_convo1: .asciiz "Player: Are you working with them? This is madness! Students are acting like brainless zombies.\n\n"
+	office_afterfight_convo2: .asciiz "Registrar: It was his idea... Ercan Korkut... We brainwashed the students with Yetmez Gençler videos.\n\n"
+	office_afterfight_convo3: .asciiz "Player: And why did he need to do this exactly?\n\n"
+	office_afterfight_convo4: .asciiz "Registrar: His ambition... He believed that MEF University was the most successful one at graduating competent students. He wanted all others to respect that belief...\n\n"
+	office_afterfight_convo5: .asciiz "Registrar: He brainwashed everyone to make them believe it as well. So he get other to join MEF in the future without any hangups.\n\n"
+	office_afterfight_convo6: .asciiz "Player: Brain washing people is not a solution to this! How can I end this madness?\n\n"
+	office_afterfight_convo7: .asciiz "Registrar: He is on 5th floor. Defeat him... He is still giving Yetmez Gençler courses.\n\n\n"
+	office_afterfight_convo8: .asciiz "***Player starts walking off to take stairs.***\n\n"
+	office_afterfight_convo9: .asciiz "Registrar: Wait! You can't defeat him, you are still weak!\n\n"
+	office_afterfight_convo10: .asciiz "Player: Do you know something?\n\n"
+	office_afterfight_convo11: .asciiz "Registrar: Aye, according to the ancient legends, there is only one person who knows how to defeat him.\n\n"
+	office_afterfight_convo12: .asciiz "Player: And who is that?\n\n"
+	office_afterfight_convo13: .asciiz "Registrar: I'm telling you 'ancient legends' right? There is a book of his learnings in the library.\n\n"
+	office_afterfight_convo14: .asciiz "Registrar: The book is guarded by someone who resides in the library. You need to be careful.\n\n"
+	office_afterfight_convo15: .asciiz "Player: (Is that 'someone', our librarian? I knew the time would come someday. I shall pay a visit to library.)\n\n"
+	office_afterfight_convo16: .asciiz "Player: Take care.\n\n"
+	office_afterfight_convo17: .asciiz "***Player takes upstairs.***\n\n\n"
+	
+	floor3_librarian_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \n\n	___________________________________________________________________________________\n	||=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| __..\\/ |  |_|  ||#||==|  / /|_|  ||#||==|  / / |\n	|| | | | | | | | | | | | | | | | | |/\\ \\  \\\\|++|=|  || ||==| / / |=|  || ||==| / /  |\n	||_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_/_/\\_.___\\__|_|__||_||__|/_/__|_|__||_||__|/_/_  |\n	|________________________________ /\\~()/()~//\\ _____________________________________|\n	|   _____ _ __    _               \\_  (_ .  _/ _    ___     __ _     _____          |\n	||=|=|~~|_|..|~~|_|..|__| || |_ _   \\ //\\\\ /  |=|__|~|~|___| | | |=|__|~|~|___| | | |\n	|| | |--|+|^^|--|+|^^|==|1||2| | |__/\\ __ /\\__| |==|x|x|+|+|=|=|=| |==|x|x|+|+|=|=|=|\n	|| | |__|_|__|__|_|__|__|_||_|_| /  \\ \\  / /  \\_|__|_|_|_|_|_|_|_|__|_|_|_|_|_|_|_ _|\n	|_____________________________ _/    \\/\\/\\/    \\_ __________________________________|\n	|                    |/      \\../      \\|  __   __   _____   __   ______  _         |\n	||=|=|~~|_|..|_____|_| |_|##|_||   |   \\/ __|   ||_|==|_|++|_|-|||==|_|++|_|-||-|| ||\n	|| | |~~|_|..|______||=|#|--| |\\   \\   o    /   /| |  |~|  | | |||  |~|  | | || || ||\n	||_|_|__|_|..|______||_|_|__|_|_\\   \\  o   /   /_|_|__|_|__|_|_|||__|_|__|_|_|| ||_||\n	|_____________________ __________\\___\\____/___/___________ _______________________  |\n	|             __    _   /    ________     ______           /| _ _ _                 |\n	|   |=||%|%|%| \\ \\  |=|/   //    /| //   /  /  / |        / ||%|%|%|\\ \\  |=||%|%|%| |\n	|   |*||=|=|=|	\\/\\ |*/  .//____//.//   /__/__/ (_)      /  ||=|=|=| \\/\\ |*||=|=|=| |\n	|   | ||~|~|~|	 \\/\\|/   /(____|/ //                    /  /||~|~|~|  \\/\\| ||~|~|~| |\n	|   |=||_|_|_| ___\\_/   /________//   ________         /  / ||_|_|_|   \\ |=||_|_|_| |\n	|_________ /   (|________/   |\\_______\\       /  /| |_________________________|_____|\n              /                  \\|________)     /  / | |\n			  \n			  \n			  \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n"
+	floor3_library_dialog1: .asciiz "Player: (This should be the library, looks like it's being guarded.)\n\n"
+	floor3_library_dialog2: .asciiz "Player: Can I pass through? I need a book for my reasearch project.\n\n"
+	floor3_library_dialog3: .asciiz "Librarian: No one is allowed unless you get permission from Professor Korkut. Do you have a signed paper?\n\n"
+	floor3_library_dialog4: .asciiz "Player: No I don't, you have to let me through!\n\n"
+	floor3_library_dialog5: .asciiz "Librarian: You're not going anywhere!\n\n"
+	floor3_library_dialog6: .asciiz "Player: We will see about that!\n\n\n"
+
+	floor3_library_inbattle1: .asciiz "Argh-! You shall not pass!\n\n"
+	floor3_library_inbattle2: .asciiz "Ouch-! It's finals week, you make so much noise.\n\n"
+	floor3_library_inbattle3: .asciiz "Ughh-! Do you know about how to make citations?\n\n"
+	floor3_library_hitplayer_dialog: .asciiz "Librarian: Take this!\n\n> You took "
+
+	floor3_library_afterbattle1: .asciiz "Librarian: +Ugh... I feel dizzy, what happened to me?!\n\n"
+	floor3_library_afterbattle2: .asciiz "Player: Professor Korkut is manipulating everyone in the school.\n\n"
+	floor3_library_afterbattle3: .asciiz "Player: I need some help now. I should gather some information to stop him. Will you help me.\n\n"
+	floor3_library_afterbattle4: .asciiz "Librarian:You talk about the forbiedden part of the library I guess. It has 3 different corridors. THe information you need should be there.\n\n"
+
+	floor3_library_hallwat_ascii: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n        \\                                        /\n          \\                                     /\n           \\                                   /\n           ]                                  [    ,'|\n           ]                                  [   /  |\n           ]____                          ____[ ,'   |\n           ]   ]\\                        /[   [ |:   |\n           ]   ] \\                      / [   [ |:   |\n           ]   ]  ]                    [  [   | | :  |\n           ]   ]  ]____             ___[  [   [ |:   |\n           ]   ]  ]   ]\\     _    /[   [  [   [ |:   |\n           ]   ]  ]   ]     (#)    [   [  [   [ :===='\n           ]   ]  ]___]    .nHn.   [___[  [   [\n           ]   ]  ]       HHHHH.       [  [   [\n           ]   ] /        `HH('N        \\ [   [\n           ]___]/          HHH  '        \\[___[\n           ]               NNN                [\n           ]               N/'                [\n           ]               N H                [\n          /                N                   \\\n         /                 q,                   \\\n        /                                        \\\n			\n\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+				\n\n"
+	floor3_library_book_ascii: .asciiz "      ______ ______\n    _/      Y      \_\n   // ~~ ~~ | ~~ ~  \\\n  // ~ ~ ~~ | ~~~ ~~ \\\     \n //________.|.________\\\    \n`----------`-'----------'\n\n"
+
+	floo3_library_book1_name: .asciiz "1st Book; The Secret of OrtaylÄ±\n\n"
+	floor3_book1_2: .asciiz ".-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. "
+	floor3_book1_3: .asciiz "/ -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . "
+	floor3_book1_4: .asciiz "/ - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . "
+	floor3_book1_5: .asciiz "/ ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. "
+	floor3_book1_6: .asciiz "/ -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. "
+	floor3_book1_7: .asciiz "/ .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . "
+	floor3_book1_8: .asciiz "/ .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... "
+	floor3_book1_9: .asciiz "/ .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... "
+	floor3_book1_10: .asciiz "/ .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- "
+	floor3_book1_11: .asciiz "/ ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- "
+	floor3_book1_12: .asciiz "/ - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - "
+	floor3_book1_13: .asciiz "/ -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. "
+	floor3_book1_14: .asciiz "/ .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. "
+	floor3_book1_15: .asciiz  "/ ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- "
+	floor3_book1_16: .asciiz "/ ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--"
+
+	floor3_dialog_after_book1: .asciiz "Player: Ehh...\n\n"
+
+	floor3_library_book2_name: .asciiz "2nd Book; Computer Architecture\n\n"
+	floor3_library_book2_1: .asciiz "The organizational changes in processor design have primarily been focused on increasing instruction-level parallelism so that more work could be done in each clock cycle. - True\n\n"
+	floor3_library_book2_2: .asciiz "GPUs are capable of running operating systems. - False\n\n"
+	floor3_library_book2_3: .asciiz "With superscalar organization increased performance can be achieved by increasing the number of parallel pipelines - True\n\n"
+	floor3_library_book2_4: .asciiz "The caches hold recently accessed data - True\n\n"
+
+	floor3_library_book2_dialog: .asciiz "Player: I don't really need that book now.\n\n"
+
+	floo3_library_book3_name: .asciiz "3rd book; Egitim Sizde Sistem Caresiz by Ercan Korkut\n\n"
+	floor3_library_book3_dialog1: .asciiz "Player: That was my favorite book back in my freshman days.\n\n"
+	floor3_library_book3_dialog2: .asciiz "Player: He was such a good man, I wonder why the things turned out like this.\n\n"
+
+	floor3_library_book3_story: .asciiz "*MC finds a marked page, only thing written on that page is 'Use the power of Math'\n\n"
+
+	floor3_library_book3_dialog4: .asciiz "Player: Oh, I should have attended the calculus classes...\n\n"
+	floor3_library_book3_dialog5: .asciiz "Player: Anyways, let's keep going.\n\n\n"
+
     floor3_minigame_ascii1: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                            @@@@                                           @@@@                                           @@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                         @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                        @@---------@@                                  @@---------@@                                  @@---------@@\n                 =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                OO    []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n               OxxO   []  |_______|  []                              []  |_______|  []                              []  |_______|  []\n        ####### OO    []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n      // #######      []  ||_____||  []                              []  ||_____||  []                              []  ||_____||  []\nJJ===// ||     \\\\\\zz  []  ||     ||  [|                              []  ||     ||  [|                              []  ||     ||  [|\n J      ||      \\\\    []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n   JJ===||       ==   []  ||     ||  []                              []  ||     ||  []                              []  ||     ||  []\n  \n\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
     floor3_minigame_ascii2: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                            @@@@                                           @@@@                                           @@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                            @@@@@                                          @@@@@                                          @@@@@\n                         @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                        @@---------@@                                  @@---------@@                                  @@---------@@\n                 =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                      []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                      []@@|       |@@[]                   OO         []@@|       |@@[]                              []@@|       |@@[]\n                      []  |_______|  []                  OxxO        []  |_______|  []                              []  |_______|  []\n                      []  ||     ||  []           ####### OO         []  ||     ||  []                              []  ||     ||  []\n                      []  ||_____||  []         // #######           []  ||_____||  []                              []  ||_____||  []\n                      []  ||     ||  [|   JJ===// ||     \\\\\\zz       []  ||     ||  [|                              []  ||     ||  [|\n                      []  ||     ||  []    J      ||      \\\\         []  ||     ||  []                              []  ||     ||  []\n                      []  ||     ||  []      JJ===||       ==        []  ||     ||  []                              []  ||     ||  []\n                                              J\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
     floor3_minigame_ascii3: .asciiz "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n\n\n\n\n                             @@@@                                           @@@@                                           @@@@\n                             @@@@@                                          @@@@@                                          @@@@@\n                             @@@@@                                          @@@@@                                          @@@@@\n                          @@@ @@@ @@@@                                   @@@ @@@ @@@@                                   @@@ @@@ @@@@\n                         @@---------@@                                  @@---------@@                                  @@---------@@\n                  =======@@|       |@@=======                    =======@@|       |@@=======                    =======@@|       |@@=======\n                       []@@|       |@@[]                              []@@|       |@@[]                              []@@|       |@@[]\n                       []@@|       |@@[]                              []@@|       |@@[]                     OO       []@@|       |@@[]\n                       []  |_______|  []                              []  |_______|  []                    OxxO      []  |_______|  []\n                       []  ||     ||  []                              []  ||     ||  []             ####### OO       []  ||     ||  []\n                       []  ||_____||  []                              []  ||_____||  []           // #######         []  ||_____||  []\n                       []  ||     ||  [|                              []  ||     ||  [|     JJ===// ||     \\\\\\zz     []  ||     ||  [|\n                       []  ||     ||  []                              []  ||     ||  []      J      ||      \\\\       []  ||     ||  []\n                       []  ||     ||  []                              []  ||     ||  []        JJ===||       ==      []  ||     ||  []\n                            \n\n\n\n\n\n\n\n\n\n \n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\n\n"
@@ -1086,7 +1175,297 @@ floor2_studentfight_loop:
         sleep(3000)
         fakebreakpoint
 
+        j floor2_officefight
+		
+floor2_officefight:
+    clearterminal
+    print(office_artbig)
+    sleep(3000)
+    clearterminal
+    print(office_art)
+
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    li $t5, 0
+    printstats()
+
+    print(office_beforefight_convo1)
+    sleep(3000)
+    print(office_beforefight_convo2)
+    sleep(3000)
+    print(office_beforefight_convo3)
+    sleep(3000)
+    print(office_beforefight_convo4)
+    sleep(3000)
+    print(office_beforefight_convo5)
+    sleep(3000)
+    print(office_beforefight_convo6)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(office_art)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+    floor2_officefight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor2_officefight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(office_art)
+        printstats
+
+        randomness(89999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor2_officefight_correct # branch to label 'equal' if $v0 == $t5
+        j floor2_officefight_loop
+
+        floor2_officefight_correct:
+            addi $t4, $t4, 1
+            j floor2_officefight_loop
+
+    floor2_officefight_turn_ends:
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor2_officefight_enemydead # check if enemy is dead
+
+        randomness(39, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(office_art)
+        printstats
+        
+        printrandom(office_infight1, office_infight2, office_infight3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(floor2_office_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2) # leave
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+        j floor2_officefight_loop
+
+    floor2_officefight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(office_art)
+        printstats
+        printrandom(office_infight1, office_infight2, office_infight3)
+        print(floor0_guards_takehit1)
+        printregister($t4)
+        print(floor0_guards_takehit2)
+        print(enemyvanquished)
+        fakebreakpoint
+
+        clearterminal
+        print(office_art)
+        printstats
+        print(office_afterfight_convo1)
+        sleep(3000)
+        print(office_afterfight_convo2)
+        sleep(3000)
+        print(office_afterfight_convo3)
+        sleep(3000)
+        print(office_afterfight_convo4)
+        sleep(3000)
+        print(office_afterfight_convo5)
+        sleep(3000)
+        print(office_afterfight_convo6)
+        sleep(3000)
+        print(office_afterfight_convo7)
+        sleep(3000)
+        print(office_afterfight_convo8)
+        sleep(3000)
+        
+        fakebreakpoint
+        clearterminal
+        print(office_art)
+        printstats
+        
+        print(office_afterfight_convo9)
+        sleep(3000)
+        print(office_afterfight_convo10)
+        sleep(3000)
+        print(office_afterfight_convo11)
+        sleep(3000)
+        print(office_afterfight_convo12)
+        sleep(3000)
+        print(office_afterfight_convo13)
+        sleep(3000)
+        print(office_afterfight_convo14)
+        sleep(3000)
+        print(office_afterfight_convo15)
+        sleep(3000)
+        print(office_afterfight_convo16)
+        sleep(3000)
+        print(office_afterfight_convo17)
+        sleep(3000)
+        fakebreakpoint
+
+        clearterminal
+        print(sliceview_floor3)
+        fakebreakpoint
+        j floor3_librarianfight
+
+floor3_librarianfight:
+	clearterminal
+    print(floor3_librarian_ascii)
+
+    li $t2, 100
+    li $t3, 100
+    li $t4, 0
+    li $t5, 0
+    printstats()
+
+    print(floor3_library_dialog1)
+    sleep(3000)
+    print(floor3_library_dialog2)
+    sleep(3000)
+    print(floor3_library_dialog3)
+    sleep(3000)
+    print(floor3_library_dialog4)
+    sleep(3000)
+    print(floor3_library_dialog5)
+    sleep(3000)
+    print(floor3_library_dialog6)
+    sleep(3000)
+    fakebreakpoint
+
+    clearterminal
+    print(floor3_librarian_ascii)
+    printstats
+    print(fight_starting)
+    sleep(5000)
+
+    # Get current time before user input
+    li $v0, 30
+    syscall
+    move $t9, $a0 # Store starting time in $t9
+    addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+floor3_librarianfight_loop:
+        li $v0, 30
+        syscall
+        move $t8, $a0 # Store time in $t8
+        bgt $t8, $t9, floor3_librarianfight_turn_ends # if $t8 > $t9 exit the loop
+
+        clearterminal
+        print(floor3_librarian_ascii)
+        printstats
+
+        randomness(89999, 10000)
+
+        print(testfight_instruction)
+        printregister($t5)
+        print(newline)
+        print(answer_prompt)
+
+        li $v0, 5 # system call code for reading an integer
+        syscall # read integer from user and store in $v0
+        beq $v0, $t5, floor3_librarianfight_correct # branch to label 'equal' if $v0 == $t5
+        j floor3_librarianfight_loop
+
+        floor3_librarianfight_correct:
+            addi $t4, $t4, 1
+            j floor3_librarianfight_loop
+   
+    floor3_librarianfight_turn_ends:
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        mult $t4, $t0 # multiply $t4 by $t0
+        mflo $t4 # move the result from the LO register to $t4
+        sub $t3, $t3, $t4 # deal dmg to enemy
+        bltz $t3, floor3_librarianfight_enemydead # check if enemy is dead
+
+        randomness(39, 10)
+        sub $t2, $t2, $t5 # player takes dmg
+
+        clearterminal
+        print(floor3_librarian_ascii)
+        printstats
+        
+        printrandom(floor3_library_inbattle1, floor3_library_inbattle2, floor3_library_inbattle3)
+        print(floor0_guards_takehit1) # leave
+        printregister($t4)
+        print(floor0_guards_takehit2) # leave
+        li $t4, 0 # reset dmg
+        sleep(1500)
+        
+        print(newline)
+        print(floor3_library_hitplayer_dialog)
+        printregister($t5)
+        print(testfight_takehit2) # leave
+        print(newline)
+        fakebreakpoint
+
+        # Get current time before user input
+        li $v0, 30
+        syscall
+        move $t9, $a0 # Store starting time in $t9
+        addi $t9, $t9, 15000 # Give 15 seconds to the user
+
+        j floor3_librarianfight_loop
+
+    floor3_librarianfight_enemydead:
+        li $t3, 0
+        clearterminal
+        print(floor3_librarian_ascii)
+        printstats
+        printrandom(floor3_library_inbattle1, floor3_library_inbattle2, floor3_library_inbattle3)
+        print(floor0_guards_takehit1)
+        printregister($t4)
+        print(floor0_guards_takehit2)
+        print(enemyvanquished)
+        fakebreakpoint
+
+        clearterminal
+        print(floor3_librarian_ascii)
+        printstats
+        print(floor3_library_afterbattle1)
+        sleep(3000)
+        print(floor3_library_afterbattle2)
+        sleep(3000)
+        print(floor3_library_afterbattle3)
+        sleep(3000)
+        print(floor3_library_afterbattle4)
+        sleep(3000)
+        fakebreakpoint
+
         j debugmenu
+
+
 
 floor3_slither_minigame:
     clearterminal
