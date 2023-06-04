@@ -24,10 +24,10 @@ Windows:
 
 
 # Contributors & Special Thanks
-[Durukan Ocak](https://github.com/Drkockk)
+Core member - [Durukan Ocak](https://github.com/Drkockk)
 
-[Emre Yılmaz](https://github.com/Eelis03)
+Core member - [Emre Yılmaz](https://github.com/Eelis03)
 
-[Mert Çeküç](https://github.com/mertcekuc)
+Core member - [Mert Çeküç](https://github.com/mertcekuc)
 
-[Buse Yılmaz](https://github.com/harubyy)
+Special thanks - [Buse Yılmaz](https://github.com/harubyy)
