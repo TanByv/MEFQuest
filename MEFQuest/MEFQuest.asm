@@ -61,6 +61,39 @@
     j invalid_input
 .end_macro
 
+# Four Way Selection Macro
+.macro selection_lib($prompt, $destination1, $destination2, $destination3, $destination34)
+    print($prompt)
+
+    # read integer from user
+    li $v0, 5
+    syscall
+    move $t0, $v0
+
+    # check if user entered 1
+    li $t1, 1
+    beq $t0, $t1, $destination1
+
+    # check if user entered 2
+    li $t1, 2
+    beq $t0, $t1, $destination2
+    
+     # check if user entered 3
+    li $t1, 3
+    beq $t0, $t1, $destination3
+
+    # check if user entered 4
+    li $t1, 4
+    beq $t0, $t1, $destination4
+    
+    # check if user entered 1337 (very secret debug menu)
+    li $t1, 1337
+    beq $t0, $t1, debugmenu
+
+    # handle else
+    j invalid_input
+.end_macro
+
 # Sleep Macro
 .macro sleep($ms)
     li $a0, $ms
