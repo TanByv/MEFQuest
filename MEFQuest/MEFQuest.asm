@@ -462,7 +462,7 @@ debugmenu:
 
     # check if user entered 1
     li $t1, 1
-    beq $t0, $t1, librarybook
+    beq $t0, $t1, testfight
 
     # check if user entered 2
     li $t1, 2
