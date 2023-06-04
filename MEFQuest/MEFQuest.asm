@@ -656,7 +656,7 @@ floor0_guardfight:
             j floor0_guardfight_loop
 
     floor0_guardfight_turn_ends:
-        li $t0, 13 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
@@ -773,7 +773,7 @@ floor0_kantinfight:
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor0_kantinfight_enemydead # check if enemy is dead
 		
-        randomness(39, 10)
+        randomness(10, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -902,14 +902,14 @@ floor1_studentfight:
             j floor1_studentfight_loop
 
     floor1_studentfight_turn_ends:
-        li $t0, 10 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 13 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor1_studentfight_enemydead # check if enemy is dead
 		bltz $t2, playerdead
 	
-        randomness(25, 10)
+        randomness(35, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -1039,14 +1039,14 @@ floor1_ilkayfight:
             j floor1_ilkayfight_loop
    
     floor1_ilkayfight_turn_ends:
-        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 11 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor1_ilkayfight_enemydead # check if enemy is dead
         bltz $t2, playerdead
 
-        randomness(39, 10)
+        randomness(45, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -1081,7 +1081,7 @@ floor1_ilkayfight:
         clearterminal
         print(floor1_ilkay_ascii)
         printstats
-	printrandom(floor1_ilkay_inbattle1, floor1_ilkay_inbattle2, floor1_ilkay_inbattle3)
+	    printrandom(floor1_ilkay_inbattle1, floor1_ilkay_inbattle2, floor1_ilkay_inbattle3)
         print(floor0_guards_takehit1)
         printregister($t4)
         print(floor0_guards_takehit2)
@@ -1173,7 +1173,7 @@ floor2_studentfight_loop:
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor2_studentfight_enemydead # check if enemy is dead
 
-        randomness(39, 10)
+        randomness(32, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -1296,13 +1296,13 @@ floor2_officefight:
             j floor2_officefight_loop
 
     floor2_officefight_turn_ends:
-        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 14 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor2_officefight_enemydead # check if enemy is dead
 
-        randomness(39, 10)
+        randomness(45, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -1600,13 +1600,13 @@ floor3_librarianfight_loop:
             j floor3_librarianfight_loop
    
     floor3_librarianfight_turn_ends:
-        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 9 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor3_librarianfight_enemydead # check if enemy is dead
 
-        randomness(39, 10)
+        randomness(45, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
@@ -1880,13 +1880,13 @@ floor5_firsthalf_fight:
             j floor5_firsthalf_fight_loop
     
     floor5_firsthalf_fight_turn_ends:
-        li $t0, 15 # load immediate value 15 into $t0 (damage multiplier)
+        li $t0, 8 # load immediate value 15 into $t0 (damage multiplier)
         mult $t4, $t0 # multiply $t4 by $t0
         mflo $t4 # move the result from the LO register to $t4
         sub $t3, $t3, $t4 # deal dmg to enemy
         bltz $t3, floor5_firsthalf_fight_enemydead # check if enemy is dead
 
-        randomness(39, 10)
+        randomness(50, 10)
         sub $t2, $t2, $t5 # player takes dmg
         bltz $t2, playerdead
 
