@@ -154,95 +154,121 @@ Player: This should be the English Prep year-
 
 Student: School good but school no has campus. 
 
-Player: Haven't you told, it's forbidden here talking in turkish?!
+Player: Haven't you been told that it's forbidden to talk Turkish here?
 
-(fight sırasında I don't now diyebilir öğrenciler)
+Student: Don't tell me what to do!
 
-+What happening!?!?!
-MC: What did happen to you? 
--We did watched videos and went .
-MC: (It's really exhausting to try talking with those guys in English, most probably I might find something useful in Registrar Office.
+(Fight)
 
-MC went into office and personals realised that he didn't get affected. 
-+(How comes he is still thinking on his own?!)
-+Haven't you attended Yetmez Gençler? You won't be able graduate.
-MC: Cut the crap, where is Professor Korkut?
-+We can't inform you about that topic, you may mail us later.
-MC: Really?
-+Yeah.
+Student: What happened?
+
+Player: Are you alright?
+
+Student: No my head is spinning... Leave me alone!
+
+MC: (It's really exhausting to try talk with those guys... I might find something useful in the Registrar Office.)
+
+------------------------
+
+Student: Um, hello. Is this the Registrar's Office?
+
+Office Worker 1: Not to you.. You look different!
+
+Office Worker 2: Haven't you attended Yetmez Gençler? You won't be able graduate.
+
+Player: Cut the crap, where is Professor Korkut?
+
+Office Worker 1: We can't inform you about that topic, you may mail us later.
+
+Player: How about we solve this problem right now?
+
 (fight sırasında You may mail us, we can't help you right now, diyebilirler)
 
-*fight*
+(Fight)
 
 
-MC: How have you done this all? This is madness! Students are acting like brainless zombies. 
-+It was his idea... Ercan Korkut... We brainwashed the students with Yetmez Gençler videos.
-MC: And why did he need to do this exactly?
-+His ambition... He believed that MEF University was the most successful one at graduating students as competent. He wanted all others to respect that belief...
-+He brainwashed everyone to make them believe it as well. So he could make other participants as MEF Students in the future without any hangup.
-MC: People should have their own choices. They should decide on their own! How can I end this madness?
-+He is on 5th floor. Defeat him... He is still giving Yetmez Gençler courses.
+Player: Are you working with them? This is madness! Students are acting like brainless zombies. 
 
-MC starts walking off to take stairs.
+Office Worker 1: It was his idea... Ercan Korkut... We brainwashed the students with Yetmez Gençler videos.
+
+Player: And why did he need to do this exactly?
+
+Office Worker 2: His ambition... He believed that MEF University was the most successful one at graduating competent students. He wanted all others to respect that belief...
+
+Office Worker 1: He brainwashed everyone to make them believe it as well. So he get other to join MEF in the future without any hangups.
+
+Player: Brain washing people is not a solution to this! How can I end this madness?
+
+Office Worker 2: He is on 5th floor. Defeat him... He is still giving Yetmez Gençler courses.
+
+*Player starts walking off to take stairs.*
 
 
-+Wait! You can't defeat him, you are still weak!
-MC: Do you know something?
-+Aye, according to ancient legends, there is only one person who knows how to defeat him.
-MC: And who is that?
-+I'm telling you "ancient legends" right? Most probably he is dead already. But there is a book of his learnings in the library.
-+Anyways the book is guarded by someone. You need to be careful.
-MC:(Is that someone our librarian? I knew the time would come someday. I shall pay a visit to library.
-MC: Take care.
+Office Worker 1: Wait! You can't defeat him, you are still weak!
 
-MC takes upstairs.
+Player: Do you know something?
+
+Office Worker 1: Aye, according to the ancient legends, there is only one person who knows how to defeat him.
+
+Player: And who is that?
+
+Office Worker 1: I'm telling you "ancient legends" right? There is a book of his learnings in the library.
+
+Office Worker 2: The book is guarded by someone who resides in the library. You need to be careful.
+
+Player: (Is that "someone", our librarian? I knew the time would come someday. I shall pay a visit to library.)
+
+Player: Take care.
+
+*MC takes upstairs.*
+
 -----------------------------------
-
-
 
 > 3rd Floor
 
--> event 10:30 kaydediyor
-loop: saat 10:31 oldumu?
-event oynat!
-goto loop
+Library Hall
 
+MC: (That's no good. There are so many students. They are all focused on those brainwashing videos though.)
+MC: (I may be able to sneak in, I can't fight with all of them.)
+
+quick time event
+
+MC: (That was close...)
+
+> Another encounter with the toaster guy.
+
+Toaster Guy: How is going? Have you found a way?
+
+Player: Aye, I got some intel, I should find some kind of ancient information inside the Library to defeat him. 
+
+Toaster Guy: Nice, in any case if you need this *offers a pizza toast*
+
+Player: Thanks man.
 
 -----------------------
 
-kütüphane masaları
-dolular, öğrenciler yetmez-genc videoları seyrediyor
+Player: (This should be the library, looks like it's being guarded.)
 
-MC: (Oh, that's no good. There are so many students. They are all focused on those brainwashing videos.)
-MC: (I should sneak in, otherwise I can't fight with all of them.)
+Player: Can I pass through? I need a book for my reasearch project.
 
-çok fazla oldukları için
-gizlice yanlarından geçip kütüphaneye ulaşmamız lazım.
+Librarian: No one is allowed unless you get permission from Professor Korkut. Do you have a signed paper?
 
-quick time event, fight yok yeni tip bir event.
+Player: No I don't, you have to let me through!
 
-MC: (God, that was close...)
+Librarian: You're not going anywhere!
 
-> Another encounter with the toaster guy.
-+How is going? Have you found a way?
-MC: Aye, I got some intel, I should find a kind of ancient information at Library to defeat him. 
-+Nice, in any case if you need this *offers a pizza toast*
-MC: Thanks man.
+Player: We will see about that!
 
+(Fight)
 
->Eventually MC gets to library.
-The librarian is waiting in fron of the door, guarding there.
-MC: May I pass through, I need a book for reasearch purposes.
-+No one is allowed unless you get permission by Professor Korkut. Do you any signed paper?
-MC:Nah.
-+Then you can't pass through.
-MC: We will see about that.
-
-fight
+----------------------------
 
 +Ugh... I feel dizzy, what happened to me?
+
 MC: Professor Korkut is manipulating everyone in the school. 
+
 MC: I need some help now. I should gather some information to stop him. Will you help me.
+
 +You talk about the forbiedden part of the library I guess. It has 3 different corridors. THe information you need should be there.
 
 (Koridor ASCII)ascii art hazır, sağ sol düz
@@ -250,8 +276,27 @@ MC: I need some help now. I should gather some information to stop him. Will you
 kitap fotoları
 
 1st Book; The Secret of Ortaylı
-.-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. / -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . / - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . / ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. / -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. / .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . / .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... / .. -. -.. ..- ... - .-. .. .- .-.. .. --.. . -.. --..-- / - .... . / -. ..- -- -... . .-. / --- ..-. / .-- --- .-. -.- .. -. --. / .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... / .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- / ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- / - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - / -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. / .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. / ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- / ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--
+
+.-..-. .-- . / -... . .-.. .. . ...- . / - .... .- - / ..--- ----- - .... / -. .- - .. --- -. .- .-.. / . -.. ..- -.-. .- - .. --- -. 
+/ -.-. --- ..- -. -.-. .. .-.. / .. ... / ...- . .-. -.-- / .. -- .--. --- .-. - .- -. - .-.-.- / .. - / .. ... / -... . -.-. .- ..- ... . 
+/ - .... . .-. . / .- .-. . / ... --- -- . / .--. .-. --- -... .-.. . -- ... / .- -. -.. / - .... . -.-- / -- ..- ... - / -... . 
+/ ... --- .-.. ...- . -.. / .. -. / ... --- -- . / .-- .- -.-- .-.-.- / .. - / .. ... / .- / ... --- -.-. .. .- .-.. / .- -. -.. 
+/ -. .- - .. --- -. .- .-.. / -- .- - - . .-. / .- -. -.. / .. - / -.-. --- -. -.-. . .-. -. ... / .- .-.. .-.. 
+/ .--. . --- .--. .-.. . .-.-.- .-.-.- .-.-.- / ..-. .. .-. ... - / --- ..-. / .- .-.. .-.. --..-- / - .... . .-. . / .. ... / - .... . 
+/ .--. .-. . ... -.-. .... --- --- .-.. / .. ... ... ..- . .-.-.- .-.-.- .-.-.- / - ..- .-. -.- . -.-- / .. ... 
+/ .. -. -.. ..- ... - .-. .. .- .-.. .. --.. . -.. --..-- / - .... . / -. ..- -- -... . .-. / --- ..-. / .-- --- .-. -.- .. -. --. 
+/ .--. --- .--. ..- .-.. .- - .. --- -. / .... .- ... / .. -. -.-. .-. . .- ... . -.. / .- -. -.. / -. --- .-- / -... --- - .... 
+/ .--. .- .-. . -. - ... / .- .-. . / --. --- .. -. --. / - --- / .-- --- .-. -.- .-.-.- / .. - / .. ... / -. --- - / --- -. .-.. -.-- 
+/ ...- .- .-.. .. -.. / .. -. / -... .. --. / -.-. .. - .. . ... --..-- / - .... .. ... / .... .- ... / ... .--. .-. . .- -.. / - --- 
+/ - .... . / . -. - .. .-. . / -.-. --- ..- -. - .-. -.-- .-.-.- / .. - / .. ... / -. --- - / .-. .. --. .... - / - --- / .-.. . - 
+/ -.-. .... .. .-.. -.. .-. . -. / -.-. .- .-. .-. -.-- / - .... . / -... ..- .-. -.. . -. / --- ..-. / .- / --. .-. --- .-- .. -. --. 
+/ .. -. -.. ..- ... - .-. -.-- / .- -. -.. / -... ..- ... .. -. . ... ... / .-.. .. ..-. . .-.-.- / -.-. .... .. .-.. -.. .-. . -. 
+/ ... .... --- ..- .-.. -.. / .-.. . .- .-. -. / - .... . .. .-. / -- --- - .... . .-. / .-.. .- -. --. ..- .- --. . / .- - / .- 
+/ ...- . .-. -.-- / -.-- --- ..- -. --. / .- --. . --..--
+
 MC: Ehh...
+
+-----------------------
 
 2nd Book; Computer Architecture
 
@@ -265,15 +310,17 @@ The caches hold recently accessed data - True
 
 MC: I don't really need that book now.
 
+--------------------------
 
 3rd book; Egitim Sizde Sistem Caresiz by Ercan Korkut
 
-MC: That was my favorite book back in my first class days.
+MC: That was my favorite book back in my freshman days.
+
 MC: He was such a good man, I wonder why the things turned out like this.
 
-*MC finds a marked page, only thing written on that page is 'Use power of the Math'
+*MC finds a marked page, only thing written on that page is 'Use the power of Math'
 
-MC: Oh, I should have attended calculus classes...
+MC: Oh, I should have attended the calculus classes...
 
 MC: Anyways, let's keep going.
 
@@ -286,69 +333,92 @@ MC: (A great plan, he doesn't let me go up. Stairs cannot be used and the elevat
 >Go back on 3rd Floor
 >Check the destroyed stairs.
 
-{>Go back on 3rd Floor
+>Go back on 3rd Floor
 >Check the destroyed stairs..
 
 >Go back on 3rd Floor
 >Check the destroyed stairs...
 
+-->Easteregg
 
--->Easteregg}
 
->MC gets closer to elevator and stare at it for a while, he/she gets a few necessary items from electric lab and tries to repair it.
+> Player gets closer to elevator and stare at it for a while, they get a few necessary items from electric lab and try to repair it.
 
 ->Minigame
 
 >MC manages to repair the elevator somehow and goes up on 5th floor. 
 >Ercan Korkut greets him as his arms were crossed, let's him get out of the elevator.
 
-E: Ah... Finally I have found you. It was such a surprise that a failure like you could reach 'till here. But it ends here I fear.
-E: You should have left this Campus and never come back. It's too late for regretting things tho. I'll make sure that you will be joined the others after I defeat you.
+E: Ah... Finally I have found you. It was such a surprise such a failure like you could reach here. But it ends here I fear.
+E: You should have left this Campus and never came back. But its too late for you now. I'll make sure that you will join the others after I defeat you.
 
 *MC kept his cool at Ercan's intimidating demeanor.*
 
-MC: You are poisoned by the power grantedd you by the people who have trusted you!
+MC: You are poisoned by the power granted you by the people who have trusted you!
 MC: You have turned all the students, all the professors into your puppets.
 MC: Today your reign of manipulation will end, I will end it.
 
-Ercan: You? Will you do that by all yourself? And how exactly? Don't be so silly now.
-Ercan: You are just another small error in my system. I will fix it.
+Ercan: You? Are you going to do that all by yourself? Don't be so silly now.
+Ercan: You are just another small error in my system, and I will fix it.
 
 MC: You should have educated people not turning them into brainwashed zombies. I was a big fan of your works, your efforts on making people go beyond their true potentials.
-MC: And you underestimate your student professor. I have found it. I read your secret book in the library. I will use the power of MATH.
+MC: And you underestimate your student professor. I have found it. I foudn the ancient texts hidden in the depths of the library!
 
-Ercan: So you did it. You really entered the forbidden room. It won't change a thing anyways. Enough talking, let's en-
-
-*His words cutted off by MC*
-
-MC: Your time is runnig out!
+Ercan: So you did it. You really entered the forbidden room. It won't change a thing anyway. Enough talking, let's end this.
 
 Fight starts
 
-Ercan: OMG What did i do... This program has taken over me.
+
+Ercan: What did I do... This program has taken over me.
+
 Ercan: Instead of brainwashing young people, I should have educated them.
+
 Ercan: How did you realize what was happening?
+
 MC: Buse teacher, told me everything before being captured.
-MC: Thanks to that, I wasn't affected by anything.
+
+MC: Thanks to her, I wasn't affected by anything.
+
 MC: It's not too late to correct what you have done.
+
 MC: How can we fix the students?
+
 Ercan: We can fix the students with a program called ‘Yetkin-Gencler.’
+
 Muhammer: You will never be able to stop me. It's too late now...
+
 MC and Ercan: ???
+
 Muhammer: It's time to face me.
+
 The fight begins, and MC loses.
+
 MC: He's too powerful for me...
-Ercan: I know how to defeat him... Use mathematics.
-MC: Huh??? Are you serious?
-MC: Bruh. What does math have to do with anything?
+
+Ercan: I know how to defeat him... Take this...
+
+MC: Huh? Is this a calculator?
+
+MC: Why didn't I think of this eariler...
+
+
 Fight
+
 Muhammer Kartal faints.
+
 MC takes the key from Muhammer.
+
 Buse: I knew you could do it. You deserve to get a full credit from the project.
+
 They rescue Buse from the room and board the shuttle to leave.
+
 Muhammet Sahin becomes the new rector of MEF University.
+
 Ercan changes his name to Erhan and establishes the 'Yetkin-Gencler' program.
+
 The campus issue at MEF remains unresolved.
+
+
 
 Secret Ending:
 MC decides abuse the power he got and to lead the Yetmez Gençler program himself.
