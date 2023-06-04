@@ -47,13 +47,13 @@ Player: Looks like I'll have to pass my way!
 
 > Floor 0 (Kantin)
 
-Player: Looks like I reached the Kantin. Maybe I can find something to eat here..
+Player: Looks like I reached the Kantin. Maybe I can find something to eat here.
 
-Kantinci: Hello there! I hope you are hungry, we have pizza toast, kumru, bagels and pogacas.
+Toaster Guy: Hello there! I hope you are hungry, we have pizza toast, kumru, bagels and pogacas.
 
 Player: I'll take a kumru then.
 
-Kantinci: Sure, but lets watch this video first!
+Toaster Guy: Sure, but lets watch this video first!
 
 Player: Oh hell no!
 
@@ -61,15 +61,15 @@ Player: Oh hell no!
 
 -------------
 
-Kantinci: Wait where am I? I was preparing sandwiches...
+Toaster Guy: Wait where am I? I was preparing sandwiches...
 
 Player: You were brainwashed and attacked me.
 
-Katinci: Oh, how did that happen?
+Toaster Guy: Oh, how did that happen?
 
 Player: I don't know yet, but I will figure it out.
 
-Kantinci: Good luck with that, take this kumru with you. A full stomach is a happy stomach!
+Toaster Guy: Good luck with that, take this kumru with you. A full stomach is a happy stomach!
 
 
 
@@ -103,7 +103,7 @@ Player: I guess I have to take you all down!
 
 Student 1: Where am I?
 
-Student 2: The last thing I remember is we were watching "Yetmez Gençler"'s video...
+Student 2: The last thing I remember is we were watching "Yetmez Gencler"'s video...
 
 Player: Yeah, you and all the other students were getting manipulated by Professor Ercan Korkut.
 
