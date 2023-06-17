@@ -9,7 +9,8 @@ Entirely written from scratch in MIPS Assembly.
 # Usage Instructions
 Windows:
 1) Make sure you have screen zoom scale set to 100%
-2) Launch the game using a fullscreen powershell or CMD window.
+2) Use a fullscreen powershell or CMD window.
+3) Start the game by using the included Start.bat file or manually start MARS in CLI mode `java -jar MARS.jar MEFQuest.asm`
 * Minimum supported screen resolution is 1600x900.
 * Make sure you have your terminal window height set to 54 or more.
 
